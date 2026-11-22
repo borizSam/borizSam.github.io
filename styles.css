@@ -746,3 +746,7 @@ body::after { display: none; }
 .id-face { padding-bottom: 46px; }
 .id-photo { height: 206px; }
 .id-svc { margin-top: 6px; }
+
+/* Tux nodes glow in once the penguin has been drawn */
+.sky .dragon .tuxnode { fill: currentColor; opacity: 0; }
+.sky.done .dragon .tuxnode { animation: skyfade .8s 2.2s forwards; filter: drop-shadow(0 0 4px currentColor); }

@@ -399,7 +399,17 @@ const startPortrait = (cv, mode) => new Promise(resolve => {
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, "aria-hidden": "true" });
   sky.insertBefore(svg, sky.firstChild);
   const edges = new Map(E.map(([a, b]) => [key(a, b), el("line", { class: "edge", x1: S[a][0], y1: S[a][1], x2: S[b][0], y2: S[b][1] }, svg)]));
-  dragon(el("g", { class: "dragon" }, svg));
+  // Tux, the Linux penguin, drawn point by point like a constellation (outline traced from the official logo)
+  const TUX = [[275.8,25.0], [259.5,32.8], [250.4,46.5], [247.1,64.1], [248.4,95.3], [243.9,110.9], [209.4,173.4], [206.8,196.9], [195.7,210.5], [176.8,218.4], [174.9,251.6], [183.3,259.4], [231.5,273.0], [334.4,275.0], [381.9,241.8], [385.1,235.9], [370.2,218.4], [366.3,204.7], [361.7,202.7], [365.6,181.2], [361.1,163.7], [320.0,97.3], [314.2,44.5], [302.5,30.9], [284.9,25.0]];
+  const TUX_BELLY = [[246,150],[238,204],[282,238],[326,204],[318,150]];
+  const TUX_BEAK = [[262,80],[276,90],[291,80]];
+  const TUX_EYES = [[262,68],[289,68]];
+  const tux = el("g", { class: "dragon" }, svg);
+  el("path", { class: "body", pathLength: 1, d: "M" + TUX.map(([x, y]) => x + "," + y).join("L") + "Z" }, tux);
+  el("path", { class: "scale", d: "M" + TUX_BELLY.map(([x, y]) => x + "," + y).join("L") }, tux);
+  el("path", { class: "head", d: "M" + TUX_BEAK.map(([x, y]) => x + "," + y).join("L") + "Z" }, tux);
+  TUX_EYES.forEach(([x, y]) => el("circle", { class: "eye", cx: x, cy: y, r: 2.6 }, tux));
+  TUX.forEach(([x, y]) => el("circle", { class: "tuxnode", cx: x, cy: y, r: 1.8 }, tux));
   const stars = S.map(p => {
     const g = el("g", { class: "star" }, svg);
     el("circle", { class: "core", cx: p[0], cy: p[1], r: 2.4 }, g);
