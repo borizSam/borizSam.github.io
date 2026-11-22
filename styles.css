@@ -741,3 +741,8 @@ body::after { display: none; }
 }
 @media (min-width: 1101px) and (max-width: 1280px) { .hero-panel { display: block; } }
 @media (min-width: 1281px) { .hero-panel { left: auto; width: 300px; } }
+
+/* ID card: keep content clear of the bottom status bar */
+.id-face { padding-bottom: 46px; }
+.id-photo { height: 206px; }
+.id-svc { margin-top: 6px; }
