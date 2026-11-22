@@ -46,7 +46,7 @@
     "c.title": "Let's talk?", "c.lead": "Looking for someone for your systems or cloud team? Drop me a line.",
     "skip": "Skip to content",
     "tagline": "I automate deployments and run cloud infrastructure so teams can ship with confidence.",
-    "egg.half": "A bright star: drag it onto the other one", "egg.tip": "Break it!", "egg.honor": "In honor of", "sky.quote": "Not step by step, day by day.", "sky.cite": "", "egg.quote": "If you can imagine it, you can program it.", "egg.hammer": "Hammer: hit the egg", "egg.close": "Close",
+    "egg.half": "A bright star: drag it onto the other one", "egg.tip": "Break it!", "egg.honor": "In honor of", "sky.quote": "Talk is cheap. Show me the code.", "sky.cite": "— Linus Torvalds", "egg.quote": "If you can imagine it, you can program it.", "egg.hammer": "Hammer: hit the egg", "egg.close": "Close",
   };
   const CATS = {
     es: { all: "Todo", cloud: "Cloud", devops: "DevOps / IaC", sys: "Sistemas", code: "Código", db: "Bases de datos" },
