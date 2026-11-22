@@ -750,3 +750,10 @@ body::after { display: none; }
 /* Tux nodes glow in once the penguin has been drawn */
 .sky .dragon .tuxnode { fill: currentColor; opacity: 0; }
 .sky.done .dragon .tuxnode { animation: skyfade .8s 2.2s forwards; filter: drop-shadow(0 0 4px currentColor); }
+
+/* intro: quiet texture and corner metadata */
+.intro::before { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px); background-size: 28px 28px; -webkit-mask-image: radial-gradient(ellipse at 50% 50%, #000 30%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 50%, #000 30%, transparent 75%); }
+.intro-meta { position: absolute; font: 11px/1 var(--mono); letter-spacing: .06em; color: #5c625c; pointer-events: none; }
+.intro-meta-tl { top: 22px; left: 24px; }
+.intro-meta-br { bottom: 22px; right: 24px; }
+@media (max-width: 600px) { .intro-meta { font-size: 10px; } }
