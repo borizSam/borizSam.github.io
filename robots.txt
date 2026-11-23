@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://borizsam.github.io/sitemap.xml
+Sitemap: https://borisdevops.com/sitemap.xml

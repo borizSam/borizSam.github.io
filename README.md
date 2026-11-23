@@ -1,6 +1,6 @@
 # Portfolio — Boris Ivan Huarachi Pérez
 
-Portfolio personal de DevOps & Cloud Engineer: <https://borizsam.github.io/>
+Portfolio personal de DevOps & Cloud Engineer: <https://borisdevops.com/>
 
 HTML, CSS y JavaScript sin frameworks ni build, bilingüe (ES/EN). GitHub Pages lo publica tal cual desde `main`.
 

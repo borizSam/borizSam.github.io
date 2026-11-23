@@ -416,7 +416,7 @@ There's more. Try things you'd type on a Linux box.`)), "pre"),
     whoami: () => print("Boris Ivan Huarachi Pérez — DevOps Engineer @ OCA Global · Barcelona"),
     neofetch: () => {
       const info = ['<b class="tp">boris</b>@<b class="tp">prod</b>', "----------",
-        "<b>OS</b>: Debian GNU/Linux (portfolio edition)", "<b>Host</b>: borizsam.github.io", `<b>Kernel</b>: ${T("HTML + CSS + JS, sin frameworks", "HTML + CSS + JS, no frameworks")}`,
+        "<b>OS</b>: Debian GNU/Linux (portfolio edition)", "<b>Host</b>: borisdevops.com", `<b>Kernel</b>: ${T("HTML + CSS + JS, sin frameworks", "HTML + CSS + JS, no frameworks")}`,
         `<b>Uptime</b>: ${T("5+ años en IT", "5+ years in IT")}`, "<b>Shell</b>: bash", "<b>Role</b>: DevOps Engineer @ OCA Global",
         "<b>Stack</b>: AWS · Azure · Terraform · Docker · K8s · Jenkins · Ansible", `<b>Study</b>: ${T("Ing. Informática · UOC", "Computer Engineering · UOC")}`, "<b>Location</b>: Barcelona"];
       print(info.map((l, i) => `<span class="tux">${esc(TUX[i] || " ".repeat(13))}</span>${l}`).join("\n"), "pre");
