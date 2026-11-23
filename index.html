@@ -28,7 +28,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&family=Orbitron:wght@800&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&family=Orbitron:wght@800&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&family=Orbitron:wght@800&display=swap" /></noscript>
-  <link rel="stylesheet" href="styles.css?v=62" />
+  <link rel="stylesheet" href="styles.css?v=64" />
   <script>try{var d=document.documentElement;if(sessionStorage.getItem("intro"))d.classList.add("no-intro");d.dataset.theme=sessionStorage.getItem("pf-theme")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
 </head>
 <body>
@@ -212,9 +212,8 @@
       <div class="scroller" id="scroller">
         <div class="ach ach-nasa">
           <span>NOV 2026 · NASA Space Apps</span>
-          <button class="ach-thumb" id="cert-open" type="button" aria-haspopup="dialog" aria-label="Ver certificado" data-i18n-label="cert.view"><img src="assets/nasa-cert-thumb.webp" alt="" width="240" height="184" loading="lazy" decoding="async" /></button>
+          <button class="ach-thumb" id="cert-open" type="button" aria-haspopup="dialog" aria-label="Ver certificado" data-i18n-label="cert.view"><img src="assets/nasa-cert-thumb.webp?v=2" alt="" width="480" height="371" loading="lazy" decoding="async" /></button>
           <h3>Galactic Problem Solver</h3>
-          <a class="ach-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7528192811675070464/" target="_blank" rel="noopener" data-i18n="cert.post">ver post en LinkedIn ↗</a>
         </div>
         <a class="ach" href="https://www.credly.com/badges/f8e4d3f9-4c8d-47b8-8ab7-e62d70e32cbc/public_url" target="_blank" rel="noopener"><span>2025 · <em data-i18n="cert.verify">verificar en Credly ↗</em></span><img class="ach-badge" src="assets/aws-ccp.webp" alt="" width="173" height="200" loading="lazy" decoding="async" /><h3>AWS Certified Cloud Practitioner</h3></a>
         <a class="ach" href="https://www.credly.com/badges/a2490168-e110-43ed-85c0-f87fcea667ea/public_url" target="_blank" rel="noopener"><span>2025 · <em data-i18n="cert.verify">verificar en Credly ↗</em></span><img class="ach-badge" src="assets/aws-restart.webp" alt="" width="188" height="200" loading="lazy" decoding="async" /><h3>AWS re/Start Graduate</h3></a>
@@ -290,10 +289,16 @@
   <footer class="footer">© 2026 Boris Ivan Huarachi Pérez</footer>
 
   <!-- NASA Space Apps certificate, full size -->
-  <dialog class="cert-dlg" id="cert-dlg" aria-labelledby="cert-dlg-t">
-    <button class="ghost cert-close" id="cert-close" type="button" aria-label="Cerrar" data-i18n-label="egg.close">✕</button>
-    <img src="assets/nasa-cert.webp" alt="Certificado Galactic Problem Solver, NASA Space Apps Challenge 2026" width="898" height="690" loading="lazy" decoding="async" />
-    <p id="cert-dlg-t">Galactic Problem Solver · NASA Space Apps Challenge 2026 · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7528192811675070464/" target="_blank" rel="noopener" data-i18n="cert.post">ver post en LinkedIn ↗</a></p>
+  <dialog class="cert-dlg" id="cert-dlg" aria-label="Certificado Galactic Problem Solver, NASA Space Apps Challenge 2026" data-i18n-label="cert.dlg">
+    <div class="cert-stage" id="cert-stage">
+      <div class="cert-frame">
+        <button class="cert-close" id="cert-close" type="button" aria-label="Cerrar" data-i18n-label="egg.close"><kbd aria-hidden="true">esc</kbd><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" /></svg></button>
+        <figure class="cert-card" id="cert-card">
+          <img src="assets/nasa-cert.webp?v=2" alt="Certificado Galactic Problem Solver, NASA Space Apps Challenge 2026, a nombre de Boris Ivan Huarachi Pérez" width="1056" height="816" loading="lazy" decoding="async" />
+          <span class="cert-glare" id="cert-glare" aria-hidden="true"></span>
+        </figure>
+      </div>
+    </div>
   </dialog>
 
   <!-- Hidden terminal: type "sudo" on the page, press ` or Ctrl+Alt+T, or tap the logo 5 times -->
@@ -315,7 +320,7 @@
     </div>
   </div>
   <script src="intro.js?v=53" defer></script>
-  <script src="script.js?v=52" defer></script>
+  <script src="script.js?v=54" defer></script>
   <script src="scenes.js?v=8" defer></script>
 </body>
 </html>

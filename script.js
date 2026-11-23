@@ -30,7 +30,7 @@
     "edu.cifo": "Specialization in Multiplatform App Development (DAM) and DevOps Tools · 2024 – 2025",
     "edu.fp": "Higher Technician in Networked Computer Systems · 2019 – 2021",
     "ach.title": "Certifications & recognition",
-    "cert.next": "NEXT TARGET", "cert.verify": "verify on Credly ↗", "cert.view": "View certificate", "cert.post": "see the LinkedIn post ↗",
+    "cert.next": "NEXT TARGET", "cert.verify": "verify on Credly ↗", "cert.view": "View certificate", "cert.dlg": "Galactic Problem Solver certificate, NASA Space Apps Challenge 2026",
     "q.title": "Projects & roadmap", "q.done": "Published",
     "qa.title": "Aeropuerto · Infra & CI/CD", "qa.desc": "Infrastructure and pipelines for the Aeropuerto system: Spring Boot backend and React frontend deployed on AWS ECS Fargate.",
     "qb.title": "CI/CD with automated tests", "qb.desc": "Python pipeline that validates every commit with automated tests (shift-left testing).",
@@ -278,12 +278,40 @@
   const hero = $("#hero");
   const egg = { state: "apart", solved: false };   // easter egg state (see below)
 
-  // ---------- NASA Space Apps certificate: the thumbnail opens it full size in a modal dialog ----------
-  const certDlg = $("#cert-dlg");
-  $("#cert-open").addEventListener("click", () => { certDlg.showModal(); document.body.classList.add("lock"); });
-  $("#cert-close").addEventListener("click", () => certDlg.close());
-  certDlg.addEventListener("click", e => { if (e.target === certDlg) certDlg.close(); });   // click on the backdrop
-  certDlg.addEventListener("close", () => document.body.classList.remove("lock"));
+  // ---------- NASA Space Apps certificate: opens as a card in a modal; tilts toward the pointer; animated exit ----------
+  const certDlg = $("#cert-dlg"), certCard = $("#cert-card"), certGlare = $("#cert-glare");
+  const OUT_MS = 180;   // exit is quicker than the 300 ms entrance
+  let certClosing = false;
+  const tiltReset = () => { certCard.style.transform = ""; certGlare.style.opacity = 0; };
+  const openCert = () => { certDlg.classList.remove("closing"); certDlg.showModal(); document.body.classList.add("lock"); };
+  const closeCert = () => {
+    if (!certDlg.open || certClosing) return;
+    certClosing = true;
+    certDlg.classList.add("closing");
+    setTimeout(() => { certDlg.close(); certDlg.classList.remove("closing"); certClosing = false; }, reduced ? 0 : OUT_MS);
+  };
+  $("#cert-open").addEventListener("click", openCert);
+  $("#cert-close").addEventListener("click", closeCert);
+  certDlg.addEventListener("cancel", e => { e.preventDefault(); closeCert(); });                 // Esc also animates out
+  certDlg.addEventListener("click", e => { if (!e.target.closest(".cert-card, .cert-close")) closeCert(); });   // anywhere outside the card
+  certDlg.addEventListener("close", () => { document.body.classList.remove("lock"); tiltReset(); $("#cert-open").focus({ preventScroll: true }); });
+  // Physical card: a gentle tilt toward the pointer and a glare that follows it (mouse only, not with reduced motion).
+  // The frame with the red corners stays still; only the card moves inside it.
+  if (!reduced && matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    let raf = 0;
+    certDlg.addEventListener("pointermove", e => {
+      if (certClosing) return;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const r = certCard.getBoundingClientRect();
+        const px = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)), py = Math.min(1, Math.max(0, (e.clientY - r.top) / r.height));
+        certCard.style.transform = `rotateX(${((.5 - py) * 9).toFixed(2)}deg) rotateY(${((px - .5) * 12).toFixed(2)}deg)`;   // max ±4.5° / ±6°
+        certGlare.style.background = `radial-gradient(circle at ${(px * 100).toFixed(1)}% ${(py * 100).toFixed(1)}%, rgba(255,255,255,.5), rgba(255,255,255,0) 45%)`;
+        certGlare.style.opacity = .85;
+      });
+    });
+    certDlg.addEventListener("pointerleave", tiltReset);
+  }
 
   // ---------- Hidden easter egg: two loose commits that pass for stars; drag one onto the other to merge them ----------
   const halves = [$("#egg-l"), $("#egg-r")];

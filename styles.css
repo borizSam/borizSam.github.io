@@ -639,19 +639,7 @@ a.ach:hover, a.ach:focus-visible { border-color: var(--accent); }
 .ach-thumb::after { content: "⤢"; position: absolute; right: 8px; bottom: 6px; font: 600 13px/1 var(--mono); color: #fff; opacity: .75; text-shadow: 0 1px 4px #000; }
 .ach-thumb:hover img, .ach-thumb:focus-visible img { transform: scale(1.05); }
 .ach-thumb:hover, .ach-thumb:focus-visible { border-color: var(--accent); }
-.ach-link { font-family: var(--mono); font-size: 12px; color: var(--accent); text-decoration: none; }
-.ach-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-/* certificate dialog */
-.cert-dlg { position: fixed; inset: 0; margin: auto; width: min(920px, 94vw); max-height: 92vh; padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--card, #111); color: var(--ink); overflow: auto; }
-.cert-dlg::backdrop { background: rgba(0, 0, 0, .78); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
-.cert-dlg img { display: block; width: 100%; height: auto; }
-.cert-dlg p { margin: 0; padding: 14px 18px; font: 13px/1.6 var(--mono); color: var(--muted); }
-.cert-dlg p a { color: var(--accent); }
-.cert-close { position: absolute; top: 10px; right: 10px; z-index: 1; background: rgba(0, 0, 0, .6); color: #fff; }
-.cert-dlg[open] { animation: cert-in .25s var(--ease); }
-@keyframes cert-in { from { opacity: 0; transform: scale(.97); } }
-@media (prefers-reduced-motion: reduce) { .cert-dlg[open] { animation: none; } .ach-thumb img { transition: none; } }
 
 /* achievement cards: badge or emblem between the date and the title */
 .ach-badge, .ach-emblem { display: block; align-self: flex-start; height: 92px; width: auto; margin: 14px 0 12px; }
@@ -816,3 +804,46 @@ a.ach:hover .ach-badge { transform: translateY(-2px) scale(1.03); }
 .vim-quote { margin: 30px 0 0; opacity: 0; transform: translateY(8px); visibility: visible; transition: opacity .6s .15s var(--ease), transform .6s .15s var(--ease); }
 .vim-win.shown + .vim-quote { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .vim-edit, .vim-ok, .vim-quote { transition: none; } }
+
+/* ===== NASA certificate: a card in a fixed viewfinder frame (tilt on the card only), crisp enter/exit ===== */
+.cert-dlg { --out: cubic-bezier(0.23, 1, 0.32, 1); position: fixed; inset: 0; width: 100vw; height: 100vh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: transparent; overflow: hidden; }
+.cert-dlg::backdrop { background: rgba(0, 0, 0, .84); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: opacity .18s ease-out; }
+.cert-dlg[open]::backdrop { animation: cert-fade .28s ease-out; }
+.cert-dlg.closing::backdrop { opacity: 0; }
+.cert-stage { display: grid; place-items: center; width: 100%; height: 100%; padding: 7vh 4vw; perspective: 1600px; }
+/* the frame never tilts: it holds the red corners and the close button */
+.cert-frame { position: relative; width: min(920px, 90vw, calc((84vh - 16px) * 1.294)); }
+.cert-frame::before { content: ""; position: absolute; inset: -16px; pointer-events: none; --c: var(--accent);
+  background:
+    linear-gradient(var(--c), var(--c)) top left / 22px 1.5px no-repeat, linear-gradient(var(--c), var(--c)) top left / 1.5px 22px no-repeat,
+    linear-gradient(var(--c), var(--c)) top right / 22px 1.5px no-repeat, linear-gradient(var(--c), var(--c)) top right / 1.5px 22px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom left / 22px 1.5px no-repeat, linear-gradient(var(--c), var(--c)) bottom left / 1.5px 22px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom right / 22px 1.5px no-repeat, linear-gradient(var(--c), var(--c)) bottom right / 1.5px 22px no-repeat; }
+/* the card: thin glass mat, concentric radii (14 outer − 8 padding = 6 inner) */
+.cert-card { position: relative; margin: 0; padding: 8px; border-radius: 14px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, .10), rgba(255, 255, 255, .03) 40%, rgba(255, 255, 255, .06));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .12), inset 0 1px 0 rgba(255, 255, 255, .22), 0 30px 70px -24px rgba(0, 0, 0, .95), 0 0 50px -18px color-mix(in srgb, var(--accent) 55%, transparent);
+  transform-style: preserve-3d; transition: transform .45s var(--out); will-change: transform; }
+.cert-card img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.cert-glare { position: absolute; inset: 8px; border-radius: 6px; pointer-events: none; mix-blend-mode: soft-light; opacity: 0; transition: opacity .3s ease; }
+/* close: sits on the frame's top-right, just outside the card */
+.cert-close { position: absolute; right: 0; bottom: calc(100% + 22px); display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 10px 0 8px; border: 1px solid rgba(255, 255, 255, .18); border-radius: 8px; background: rgba(255, 255, 255, .06); color: #e8e8e8; font: 500 11px var(--mono); letter-spacing: .06em; cursor: pointer; transition: background-color .15s ease, border-color .15s ease, transform .16s var(--out); }
+.cert-close kbd { font: inherit; color: #9a9f9a; text-transform: uppercase; }
+.cert-close svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+@media (hover: hover) and (pointer: fine) { .cert-close:hover { background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .32); } }
+.cert-close:active { transform: scale(.97); }
+.cert-close:focus { outline: none; }
+.cert-close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+/* enter 300 ms / exit 180 ms, from 0.96 + opacity (never from nothing) */
+.cert-dlg[open] .cert-frame { animation: cert-in .3s var(--out) both; }
+.cert-dlg.closing .cert-frame { animation: cert-out .18s ease-out both; }
+@keyframes cert-in { from { opacity: 0; transform: translateY(10px) scale(.96); } }
+@keyframes cert-out { to { opacity: 0; transform: translateY(6px) scale(.97); } }
+@keyframes cert-fade { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .cert-dlg[open] .cert-frame { animation: cert-fade .2s ease-out both; }
+  .cert-dlg.closing .cert-frame { animation: none; }
+  .cert-card { transition: none; }
+}
+@media (max-width: 600px) { .cert-close { bottom: calc(100% + 18px); } .cert-frame::before { inset: -10px; } }
+@media (prefers-reduced-motion: reduce) { .ach-thumb img { transition: none; } }
