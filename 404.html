@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Boris Huarachi</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body { display: grid; place-items: center; padding: 24px; background: #000; color: #d4d7d4; font: 15px/1.7 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+      background-image: radial-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px); background-size: 28px 28px; }
+    main { width: min(640px, 100%); }
+    .code { font-size: clamp(72px, 18vw, 140px); line-height: 1; font-weight: 800; letter-spacing: -4px; color: #f2f2f2; }
+    .code i { font-style: normal; color: #e0344f; }
+    pre { margin: 28px 0 32px; white-space: pre-wrap; word-break: break-word; font: inherit; }
+    .p { color: #5fd38d; font-weight: 600; }
+    .err { color: #ff6b7a; }
+    .dim { color: #7d827d; }
+    a { color: #f2f2f2; }
+    .btn { display: inline-block; padding: 10px 22px; border: 1px solid #f2f2f2; border-radius: 999px; color: #000; background: #f2f2f2; text-decoration: none; font-weight: 600; }
+    .btn:hover, .btn:focus-visible { background: #e0344f; border-color: #e0344f; color: #fff; }
+    .caret { display: inline-block; width: 8px; height: 1em; vertical-align: -2px; background: #d4d7d4; animation: b 1s steps(1) infinite; }
+    @keyframes b { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .caret { animation: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code">404<i>.</i></p>
+<pre><span class="p">visitor@borizsam</span>:~$ cd <span id="path">/esta-ruta</span>
+<span class="err">bash: cd: <span id="path2">/esta-ruta</span>: No such file or directory</span>
+<span class="dim" id="msg">Esta página no existe (o se movió). Vuelve al inicio.</span>
+<span class="p">visitor@borizsam</span>:~$ <span class="caret"></span></pre>
+    <a class="btn" href="/" id="home">cd ~</a>
+  </main>
+  <script>
+    (function () {
+      var p = decodeURIComponent(location.pathname);
+      document.getElementById("path").textContent = p;
+      document.getElementById("path2").textContent = p;
+      // old or mistyped links to a section: /skills, /projects… land on the right anchor
+      var map = { about: "about", sobre: "about", skills: "skills", experience: "experience", experiencia: "experience",
+        achievements: "achievements", logros: "achievements", projects: "projects", proyectos: "projects", contact: "contact", contacto: "contact", cv: "cv" };
+      var key = p.replace(/^\/+|\/+$/g, "").split("/")[0].toLowerCase();
+      var en = (navigator.language || "es").slice(0, 2) !== "es";
+      if (en) {
+        document.documentElement.lang = "en";
+        document.getElementById("msg").textContent = "This page doesn't exist (or it moved). Head back home.";
+      }
+      if (map[key] === "cv") { location.replace("/assets/cv.pdf"); return; }
+      if (map[key]) {
+        document.getElementById("home").href = "/#" + map[key];
+        document.getElementById("home").textContent = "cd ~/" + map[key];
+        document.getElementById("msg").textContent = en ? "Did you mean the " + map[key] + " section?" : "¿Buscabas la sección " + map[key] + "?";
+      }
+    })();
+  </script>
+</body>
+</html>
