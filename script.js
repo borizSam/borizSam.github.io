@@ -448,7 +448,7 @@ There's more. Try things you'd type on a Linux box.`)), "pre"),
     contact: () => print(["Email: " + link("mailto:bhuarachiperez@gmail.com", "bhuarachiperez@gmail.com"),
       "LinkedIn: " + link("https://www.linkedin.com/in/boris-ivan-huarachi-perez-859638219", "linkedin.com/in/boris-ivan-huarachi-perez"),
       "GitHub: " + link("https://github.com/borizSam", "github.com/borizSam")].join("\n"), "pre"),
-    cv: () => { const a = document.createElement("a"); a.href = "assets/cv.pdf"; a.download = ""; a.click(); print(T("Descargando cv.pdf…", "Downloading cv.pdf…")); },
+    cv: () => { const a = document.createElement("a"); a.href = "assets/Boris-Ivan-Huarachi-Perez-CV.pdf"; a.download = "Boris-Ivan-Huarachi-Perez-CV.pdf"; a.click(); print(T("Descargando Boris-Ivan-Huarachi-Perez-CV.pdf…", "Downloading Boris-Ivan-Huarachi-Perez-CV.pdf…")); },
     open: a => {
       const id = SECTIONS[(a[0] || "").replace(/\/$/, "")];
       if (!id) return print(T("uso: open about | skills | experience | projects | contact", "usage: open about | skills | experience | projects | contact"));

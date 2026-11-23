@@ -13,7 +13,8 @@ Web estática sin framework ni build. GitHub Pages la publica desde `main`.
 - `intro.js`: la intro de carga (animación de terminal/pipeline CI). Solo se ve una vez por sesión (`sessionStorage.intro`).
 - `scenes.js`: los fondos por sección (agujero negro, océano de partículas, galaxia, túnel, poliedros, campo profundo) en un único canvas fijo `#scene`.
 - `styles.css`: todos los estilos. Los temas van con `html[data-theme]` (`dark` por defecto).
-- `assets/`: `cv.pdf` y `boris-foto.webp`.
+- `assets/`: `Boris-Ivan-Huarachi-Perez-CV.pdf`, `boris-foto.webp`, badges, certificado y `og.png`.
+- `cv/`: fuente del CV (`cv.html` + `foto-cv.jpg`). El PDF se genera imprimiendo `cv/cv.html` con Chromium (A4, una página, sin márgenes); después de cambiarlo, regenera el PDF.
 
 ## Reglas de i18n
 1. Todo texto visible va en el HTML, en español, con `data-i18n="seccion.clave"`.

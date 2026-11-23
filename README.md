@@ -20,6 +20,7 @@ python3 -m http.server 8000 --bind 127.0.0.1
 | `intro.js` | Intro de carga (una vez por sesión), cursor y línea de tiempo. |
 | `script.js` | i18n (diccionario `EN`), tema, skills, navegación, certificado, easter eggs, terminal oculta y el reto de vim del footer. |
 | `scenes.js` | Fondos por sección en un único canvas fijo (agujero negro, océano, galaxia, túnel, poliedros, campo profundo). |
+| `cv/cv.html` | Fuente del CV en PDF (`assets/Boris-Ivan-Huarachi-Perez-CV.pdf`): se imprime con Chromium en A4, una página. |
 | `404.html` | Página de error de GitHub Pages; redirige `/skills`, `/cv`… a su sitio. |
 | `assets/` | CV, foto, badges, certificado, imagen para redes (`og.png`) e icono de iPhone. |
 | `favicon.svg`, `favicon.ico`, `robots.txt`, `sitemap.xml`, `.nojekyll` | Ficheros de publicación. |

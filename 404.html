@@ -51,7 +51,8 @@
         document.documentElement.lang = "en";
         document.getElementById("msg").textContent = "This page doesn't exist (or it moved). Head back home.";
       }
-      if (map[key] === "cv") { location.replace("/assets/cv.pdf"); return; }
+      var CV = "/assets/Boris-Ivan-Huarachi-Perez-CV.pdf";
+      if (map[key] === "cv" || /^\/assets\/cv\.pdf$/i.test(p)) { location.replace(CV); return; }   // the old cv.pdf link still works
       if (map[key]) {
         document.getElementById("home").href = "/#" + map[key];
         document.getElementById("home").textContent = "cd ~/" + map[key];

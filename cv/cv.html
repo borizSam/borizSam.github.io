@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Boris Ivan Huarachi Pérez — DevOps Engineer — CV</title>
+  <meta name="author" content="Boris Ivan Huarachi Pérez" />
+  <meta name="robots" content="noindex" />
+  <!-- Source of assets/Boris-Ivan-Huarachi-Perez-CV.pdf (A4, one page, printed with Chromium).
+       ATS-friendly on purpose: one column, real text in reading order, standard section names,
+       no symbols inside job titles. The website's look lives only in CSS (colours, lines, dots). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Orbitron:wght@800&display=block" rel="stylesheet" />
+  <style>
+    @page { size: A4; margin: 0; }
+    :root { --ink: #0d0d0d; --text: #2b2d2b; --muted: #656a65; --line: #e2e2e2; --accent: #b3122e; --mono: "Geist Mono", ui-monospace, monospace; --sans: "Geist", system-ui, sans-serif; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: #fff; }
+    body { width: 210mm; min-height: 297mm; padding: 10.5mm 15mm 12mm; font: 9pt/1.38 var(--sans); color: var(--text); -webkit-print-color-adjust: exact; print-color-adjust: exact; position: relative; }
+    a { color: inherit; text-decoration: none; }
+    header, section { position: relative; }   /* everything positioned → paint order = reading order in the PDF text */
+
+    /* ---------- header ---------- */
+    header { display: grid; grid-template-columns: 1fr auto; gap: 8mm; align-items: center; padding-bottom: 3.4mm; border-bottom: 1px solid var(--line); }
+    h1 { font: 700 23pt/1.05 var(--sans); letter-spacing: -.6pt; color: var(--ink); }
+    .role { margin-top: 1.8mm; font: 800 12.5pt "Orbitron", var(--sans); letter-spacing: .2pt; color: var(--ink); }
+    .role::after { content: ""; display: inline-block; width: 1.5mm; height: 1.5mm; margin-left: .8mm; background: var(--accent); }   /* the site's red dot, drawn (not a character) */
+    .contact { margin-top: 2.8mm; font: 7.9pt var(--mono); color: var(--text); white-space: nowrap; }
+    .contact span:not(:last-child)::after { content: "·"; margin: 0 1.6mm; color: var(--muted); }
+    .contact .web { color: var(--accent); font-weight: 600; }
+    .photo { position: relative; width: 25mm; height: 25mm; }
+    .photo img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 3mm; }
+    .photo::before { content: ""; position: absolute; inset: -2.2mm; pointer-events: none;
+      background:
+        linear-gradient(var(--accent), var(--accent)) top left / 5mm 1.2pt no-repeat, linear-gradient(var(--accent), var(--accent)) top left / 1.2pt 5mm no-repeat,
+        linear-gradient(var(--accent), var(--accent)) top right / 5mm 1.2pt no-repeat, linear-gradient(var(--accent), var(--accent)) top right / 1.2pt 5mm no-repeat,
+        linear-gradient(var(--accent), var(--accent)) bottom left / 5mm 1.2pt no-repeat, linear-gradient(var(--accent), var(--accent)) bottom left / 1.2pt 5mm no-repeat,
+        linear-gradient(var(--accent), var(--accent)) bottom right / 5mm 1.2pt no-repeat, linear-gradient(var(--accent), var(--accent)) bottom right / 1.2pt 5mm no-repeat; }
+
+    /* ---------- sections (standard names for ATS; the red bar is decoration) ---------- */
+    section { margin-top: 3.1mm; }
+    h2 { display: flex; align-items: center; gap: 2.4mm; margin-bottom: 1.4mm; font: 600 8pt var(--mono); letter-spacing: 1.1pt; text-transform: uppercase; color: var(--ink); }
+    h2::before { content: ""; width: 3mm; height: 1.4pt; background: var(--accent); }
+    h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    .lead strong { color: var(--ink); font-weight: 600; }
+
+    /* experience: git-graph line drawn with CSS only */
+    .job { position: relative; padding-left: 5mm; padding-bottom: 1.5mm; }
+    .job::before { content: ""; position: absolute; left: 1.1mm; top: 2.2mm; bottom: -.6mm; width: 1px; background: var(--line); }
+    .job:last-child::before { bottom: 2mm; }
+    .job::after { content: ""; position: absolute; left: 0; top: 1.3mm; width: 2.2mm; height: 2.2mm; border-radius: 50%; border: 1.2pt solid var(--ink); background: #fff; }
+    .job.now::after { background: var(--accent); border-color: var(--accent); }
+    .jh, .row { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+    h3 { font: 600 10.4pt var(--sans); color: var(--ink); letter-spacing: -.1pt; }
+    .when { font: 7.9pt var(--mono); color: var(--muted); white-space: nowrap; }
+    .where { font-size: 8.4pt; color: var(--muted); margin: .2mm 0 .8mm; }
+    ul { list-style: none; }
+    li { position: relative; padding-left: 3.4mm; }
+    li::before { content: ""; position: absolute; left: .4mm; top: .62em; width: 1.3mm; height: 1.3mm; border-radius: 50%; background: var(--accent); }
+
+    /* skills: label + list, two pairs per row */
+    .skills { display: grid; grid-template-columns: 34mm 1fr; gap: .3mm 3mm; }
+    .skills dt { font: 600 7.8pt/1.62 var(--mono); color: var(--ink); }
+    .skills dd { font-size: 8.9pt; }
+    .lines .row { padding: .15mm 0; }
+    .lines strong { color: var(--ink); font-weight: 600; }
+    .lines .sub { color: var(--muted); }
+    .lines a strong { border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+    .proj .row span:first-child { min-width: 0; }
+    .proj .stack { font: 7.6pt var(--mono); color: var(--muted); white-space: nowrap; }
+
+    footer { position: absolute; left: 15mm; right: 15mm; bottom: 7mm; display: flex; justify-content: space-between; font: 7.2pt var(--mono); color: var(--muted); }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Boris Ivan Huarachi Pérez</h1>
+      <p class="role">DevOps Engineer</p>
+      <p class="contact">
+        <span>Barcelona, España</span>
+        <span><a href="mailto:bhuarachiperez@gmail.com">bhuarachiperez@gmail.com</a></span>
+        <span><a href="tel:+34632571050">+34 632 571 050</a></span>
+        <span><a class="web" href="https://borisdevops.com">borisdevops.com</a></span>
+      </p>
+    </div>
+    <div class="photo"><img src="foto-cv.jpg" alt="Boris Ivan Huarachi Pérez" /></div>
+  </header>
+
+  <section>
+    <h2>Perfil profesional</h2>
+    <p class="lead">DevOps Engineer en <strong>OCA Global</strong>. Automatizo despliegues, pipelines de CI/CD e infraestructura como código en <strong>AWS, Azure y GCP</strong> con Terraform, Jenkins, Bitbucket, Ansible y Docker, y monitorizo con Zabbix y Grafana. Vengo de administrar sistemas Linux, Windows y VMware en producción. Estudio Ingeniería Informática en la UOC y preparo la AWS Solutions Architect Associate.</p>
+  </section>
+
+  <section>
+    <h2>Experiencia profesional</h2>
+    <div class="job now">
+      <div class="jh"><h3>DevOps Engineer</h3><span class="when">Jun 2026 – Actualidad</span></div>
+      <p class="where">OCA Global · Barcelona (híbrido)</p>
+      <ul>
+        <li>Automatización de despliegues y tareas de infraestructura con Ansible y Jenkins.</li>
+        <li>Pipelines de CI/CD en Bitbucket y Jenkins, con control de versiones en Git.</li>
+        <li>Infraestructura como código con Terraform en AWS, Azure y GCP.</li>
+        <li>Monitorización con Zabbix y Grafana, y trabajo sobre Azure y GitHub.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="jh"><h3>Administrador de Sistemas de TI</h3><span class="when">Feb 2024 – Dic 2024</span></div>
+      <p class="where">Setting Consultoría TI · Barcelona (híbrido)</p>
+      <ul>
+        <li>Entornos virtualizados con VMware vSphere, ESXi y vCenter.</li>
+        <li>Administración de servidores Linux y Windows Server; backups con Veeam y Microsoft 365.</li>
+        <li>CI/CD con GitHub Actions y contenerización con Docker.</li>
+        <li>Monitorización y optimización de sistemas con Grafana.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="jh"><h3>Operation Technician Cloud</h3><span class="when">Ene 2022 – Ene 2024</span></div>
+      <p class="where">NTT DATA · Barcelona</p>
+      <ul>
+        <li>Incidencias de nivel 2 en entornos críticos (aplicaciones, servidores e infraestructura).</li>
+        <li>Administración de entornos AWS (EC2, S3, IAM) y contenedores Docker en producción.</li>
+        <li>Soporte operativo en Kubernetes (pods, logs e incidencias).</li>
+        <li>Monitorización con Grafana e IBM Dashboard; colaboración en procesos de CI/CD.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Habilidades técnicas</h2>
+    <dl class="skills">
+      <dt>Cloud</dt><dd>AWS (EC2, S3, IAM, ECS, EKS) · Azure · GCP</dd>
+      <dt>IaC y CI/CD</dt><dd>Terraform · Jenkins · Bitbucket · GitHub Actions · Ansible</dd>
+      <dt>Contenedores</dt><dd>Docker · Kubernetes</dd>
+      <dt>Monitorización</dt><dd>Zabbix · Grafana</dd>
+      <dt>Sistemas</dt><dd>Linux · Windows Server · VMware vSphere · Veeam</dd>
+      <dt>Scripting</dt><dd>Bash · Python · PowerShell</dd>
+      <dt>Control de versiones</dt><dd>Git · Bitbucket · GitHub</dd>
+      <dt>Idiomas</dt><dd>Español (nativo) · Inglés (técnico)</dd>
+    </dl>
+  </section>
+
+  <section class="lines">
+    <h2>Formación</h2>
+    <div class="row"><span><strong>Grado en Ingeniería Informática</strong> <span class="sub">· Universitat Oberta de Catalunya (UOC) · en curso</span></span><span class="when">2026 – Actualidad</span></div>
+    <div class="row"><span><strong>Especialización en Desarrollo de Aplicaciones Multiplataforma (DAM) y DevOps Tools</strong> <span class="sub">· CIFO</span></span><span class="when">2024 – 2025</span></div>
+    <div class="row"><span><strong>Técnico Superior en Sistemas Informáticos en Red</strong> <span class="sub">· Institut Joan d’Àustria</span></span><span class="when">2019 – 2021</span></div>
+  </section>
+
+  <section class="lines">
+    <h2>Certificaciones</h2>
+    <div class="row"><span><a href="https://www.credly.com/badges/f8e4d3f9-4c8d-47b8-8ab7-e62d70e32cbc/public_url"><strong>AWS Certified Cloud Practitioner</strong></a> <span class="sub">· Amazon Web Services</span></span><span class="when">2025</span></div>
+    <div class="row"><span><a href="https://www.credly.com/badges/a2490168-e110-43ed-85c0-f87fcea667ea/public_url"><strong>AWS re/Start Graduate</strong></a> <span class="sub">· Cloud Foundations</span></span><span class="when">2025</span></div>
+    <div class="row"><span><strong>Ethical Hacker</strong> <span class="sub">· GMetrix</span></span><span class="when">2020</span></div>
+    <div class="row"><span><strong>AWS Solutions Architect Associate</strong> <span class="sub">· Amazon Web Services</span></span><span class="when">En preparación</span></div>
+  </section>
+
+  <section class="lines proj">
+    <h2>Proyectos y reconocimientos</h2>
+    <div class="row"><span><strong>Aeropuerto · Infraestructura y CI/CD</strong> <span class="sub">· Spring Boot y React en AWS ECS Fargate</span></span><span class="stack">ECS · Docker · GitHub Actions</span></div>
+    <div class="row"><span><strong>Bedrock-IA</strong> <span class="sub">· pipeline diario que genera y publica un post DevOps con IA</span></span><span class="stack">Lambda · Bedrock · Quarto</span></div>
+    <div class="row"><span><strong>Astro-Care · NASA Space Apps Challenge 2026</strong> <span class="sub">· reconocimiento Galactic Problem Solver</span></span><span class="stack">Nov 2026</span></div>
+  </section>
+
+  <footer><span>Proyectos, certificados y contacto en <a href="https://borisdevops.com">borisdevops.com</a></span><span>Actualizado: noviembre 2026</span></footer>
+</body>
+</html>
