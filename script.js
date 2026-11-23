@@ -11,16 +11,16 @@
   // ---------- i18n (Spanish lives in the HTML) ----------
   const EN = {
     "nav.about": "About", "nav.skills": "Skills", "nav.exp": "Experience", "nav.ach": "Achievements", "nav.proj": "Projects", "nav.contact": "Contact",
-    "hero.eyebrow": "Barcelona", "hero.hi": "Hi, I'm",
+    "hero.eyebrow": "Barcelona",
     "hero.lead": "DevOps Engineer at OCA Global. I automate deployments and run infrastructure on AWS and Azure with Ansible, Jenkins, Docker and Kubernetes. Coming from Windows, Linux and VMware administration; studying Computer Engineering at UOC.",
     "hero.contact": "Let's talk", "hero.work": "See projects", "cv.short": "CV ↓", "cv": "Download CV",
     "id.hint": "↻ ./flip", "id.role": "Role", "id.at": "Company", "id.loc": "Location", "id.study": "Studying", "id.langs": "Languages", "id.next": "Next",
-    "id.quote": "Always learning, always building.", "id.photo": "See real photo", "id.char": "See character",
+    "id.quote": "Always learning, always building.",
     "about.title": "DevOps Engineer today, Cloud Architect tomorrow.",
     "about.p1": "I'm a DevOps Engineer at OCA Global, where I automate deployments and manage infrastructure with Ansible, Jenkins, GitHub, Zabbix and Azure. Before that I ran virtualized environments on VMware and Linux and Windows servers, and worked with AWS, Docker and Kubernetes.",
-    "about.p2": "I build and operate secure, scalable and highly available platforms. I'm now preparing the AWS Solutions Architect Associate while studying Computer Engineering at UOC.",
+    "about.p2": "Right now I'm preparing the AWS Solutions Architect Associate and studying Computer Engineering at UOC.",
     "st.years": "years in IT", "st.certs": "certifications", "st.repos": "public repos", "st.degree": "degree in progress",
-    "sk.title": "terraform state list", "sk.hint": "Hover an element to read its description.", "sk.use": "in use", "sk.train": "in training",
+    "sk.title": "terraform state list", "sk.hint": "Hover or tap an element to read its description.", "sk.use": "in use", "sk.train": "in training",
     "exp.title": "Journey",
     "w1.date": "JAN 2022 – JAN 2024", "w1.role": "Operation Technician Cloud", "w1.a": "AWS environment administration (EC2, S3, IAM)", "w1.b": "Docker containers and pods in production · Kubernetes operational support", "w1.c": "Monitoring with Grafana and IBM Dashboard · CI/CD collaboration",
     "w2.date": "FEB 2024 – DEC 2024", "w2.role": "IT Systems Administrator", "w2.a": "Virtualized environments with VMware vSphere, ESXi and vCenter", "w2.b": "Linux and Windows Server · backups with Veeam and Microsoft 365", "w2.c": "CI/CD with GitHub Actions · containerization with Docker", "w2.d": "Monitoring and optimization with Grafana",
@@ -29,24 +29,29 @@
     "edu.uoc": "BSc Computer Engineering · 2026 – present",
     "edu.cifo": "Specialization in Multiplatform App Development (DAM) and DevOps Tools · 2024 – 2025",
     "edu.fp": "Higher Technician in Networked Computer Systems · 2019 – 2021",
-    "ach.title": "Certifications",
-    "cert.next": "NEXT TARGET",
+    "ach.title": "Certifications & recognition",
+    "cert.next": "NEXT TARGET", "cert.verify": "verify on Credly ↗", "cert.view": "View certificate", "cert.post": "see the LinkedIn post ↗",
     "q.title": "Projects & roadmap", "q.done": "Published",
     "qa.title": "Aeropuerto · Infra & CI/CD", "qa.desc": "Infrastructure and pipelines for the Aeropuerto system: Spring Boot backend and React frontend deployed on AWS ECS Fargate.",
     "qb.title": "CI/CD with automated tests", "qb.desc": "Python pipeline that validates every commit with automated tests (shift-left testing).",
     "qc.title": "Pokémon REST API", "qc.desc": "FastAPI REST API: CRUD, filters and Swagger, tests in CI and ready for a container.",
-    "q.hack": "NASA Space Apps 2026",
-    "qd.title": "Astro-Care", "qd.desc": "Offline health monitoring for Artemis astronauts: live vitals, automatic NEWS2 scoring and a GO / NO-GO test before critical tasks.",
+    "q.hack": "NASA Space Apps 2026", "chip.rt": "Real-time",
+    "qd.title": "Astro-Care", "qd.desc": "Offline health monitoring for Artemis astronauts, built as a team in 48 hours: live vitals, automatic NEWS2 scoring and a GO / NO-GO test before critical tasks.",
     "qe.title": "Bedrock-IA · DevOps content", "qe.desc": "Daily pipeline that generates a DevOps post with AI (Amazon Bedrock) and publishes it to GitHub Pages with Quarto and GitHub Actions.",
     "q.roadmap": "Roadmap",
     "rm1.t": "Foundations", "rm1.d": "Linux, networking, Windows Server, AD, virtualization, Git",
     "rm2.t": "Cloud & IaC", "rm2.d": "AWS / Azure, Docker, Terraform, CI/CD",
     "rm3.t": "Platform & operations", "rm3.d": "Kubernetes, Helm, observability, cost, high availability",
     "rm4.t": "Cloud Architect", "rm4.d": "Landing zones, hybrid networking, Well-Architected",
-    "c.title": "Let's talk?", "c.lead": "Looking for someone for your systems or cloud team? Drop me a line.",
+    "c.title": "Let's talk", "c.lead": "Looking for someone for your systems or cloud team? Drop me a line.",
     "skip": "Skip to content",
+    "a.loading": "Loading", "a.home": "Boris — home", "a.sections": "Sections", "a.theme": "Toggle light/dark theme", "a.lang": "Cambiar a español", "a.menu": "Menu",
+    "a.summary": "Summary", "a.flip": "Flip card", "a.filter": "Filter skills",
     "tagline": "I automate deployments and run cloud infrastructure so teams can ship with confidence.",
-    "egg.half": "A bright star: drag it onto the other one", "egg.tip": "Break it!", "egg.honor": "In honor of", "sky.quote": "Talk is cheap. Show me the code.", "sky.cite": "— Linus Torvalds", "egg.quote": "If you can imagine it, you can program it.", "egg.hammer": "Hammer: hit the egg", "egg.close": "Close",
+    "vim.ask": "Last challenge: exit vim.", "vim.l1": "# Boring deployments (the good kind)", "vim.l3": "If your team still deploys by hand and crosses its fingers,",
+    "vim.l4": "or you need someone to automate the repetitive stuff", "vim.l5": "and keep the cloud up while you sleep:", "vim.l6": "that's me. Get in touch ↑",
+    "vim.l8": "By the way: you're inside vim.", "vim.ok": "Some people have been trying for years.", "vim.label": "Vim command",
+    "egg.half": "A loose commit: drag it onto the other one to merge", "sky.quote": "Talk is cheap. Show me the code.", "sky.cite": "— Linus Torvalds", "egg.quote": "If you can imagine it, you can program it.", "egg.close": "Close",
   };
   const CATS = {
     es: { all: "Todo", cloud: "Cloud", devops: "DevOps / IaC", sys: "Sistemas", code: "Código", db: "Bases de datos" },
@@ -105,10 +110,11 @@
     Object.keys(CATS.es).forEach(k => {
       const f = document.createElement("button");
       f.className = "filter" + (k === activeCat ? " active" : "");
+      f.setAttribute("aria-pressed", k === activeCat);
       f.textContent = CATS[lang][k];
       f.addEventListener("click", () => {
         activeCat = k;
-        $$(".filter").forEach(x => x.classList.toggle("active", x === f));
+        $$(".filter").forEach(x => { x.classList.toggle("active", x === f); x.setAttribute("aria-pressed", x === f); });
         $$(".el").forEach(el => el.classList.toggle("off", k !== "all" && el.dataset.cat !== k));
       });
       filters.appendChild(f);
@@ -123,9 +129,8 @@
     $("#lang-btn").textContent = lang === "en" ? "ES" : "EN";
     buildFilters();
     $$(".el").forEach(el => el.classList.toggle("off", activeCat !== "all" && el.dataset.cat !== activeCat));
-    startTyping();
     splitTagline();
-    if (beat) bubble.textContent = beatText(beat);
+    moveInd();   // link widths change with the language
   }
   $("#lang-btn").addEventListener("click", () => { lang = lang === "en" ? "es" : "en"; store.set("pf-lang", lang); applyLang(); });
 
@@ -138,141 +143,43 @@
     sessionStorage.setItem("pf-theme", root.dataset.theme);
   };
 
-  /* Theme transition: the new theme burns in from the button with a ragged, flame-like edge.
-     A noise "arrival time" map is drawn once into an image; an SVG threshold filter turns it
-     into a mask for ::view-transition-new(root), and moving the threshold every frame
-     advances the edge smoothly. Falls back to an instant switch. */
-  const themeFx = (() => {
-    if (!document.startViewTransition) return null;
-    const FX = { dur: 1000, mix: .74, freq: 5, warp: 1.3, soft: .015, oct: 6 };
-    const NS = "http://www.w3.org/2000/svg";
-    const holder = document.createElement("div");
-    holder.setAttribute("aria-hidden", "true");
-    holder.className = "fx-defs";
-    holder.innerHTML =
-      `<svg xmlns="${NS}" width="0" height="0"><defs>` +
-      `<filter id="fx-th" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB"><feComponentTransfer>` +
-      `<feFuncR type="linear"/><feFuncG type="linear"/><feFuncB type="linear"/><feFuncA type="linear" slope="0" intercept="1"/>` +
-      `</feComponentTransfer></filter>` +
-      `<mask id="fx-mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="1" height="1">` +
-      `<image x="0" y="0" width="1" height="1" preserveAspectRatio="none" filter="url(#fx-th)"/></mask>` +
-      `</defs></svg>`;
-    document.body.appendChild(holder);
-    const mask = holder.querySelector("mask"), image = holder.querySelector("image");
-    const funcs = [...holder.querySelectorAll("feFuncR,feFuncG,feFuncB")];
-    const setT = t => funcs.forEach(f => { f.setAttribute("slope", -1 / FX.soft); f.setAttribute("intercept", t / FX.soft); });
-
-    function noise(seed) {
-      const P = new Uint8Array(512), V = new Float32Array(256);
-      let s = seed >>> 0 || 1;
-      const rnd = () => (s = (s * 1664525 + 1013904223) >>> 0) / 4294967296;
-      for (let i = 0; i < 256; i++) { P[i] = i; V[i] = rnd(); }
-      for (let i = 255; i > 0; i--) { const j = (rnd() * (i + 1)) | 0; [P[i], P[j]] = [P[j], P[i]]; }
-      for (let i = 0; i < 256; i++) P[i + 256] = P[i];
-      const fade = t => t * t * (3 - 2 * t);
-      const n2 = (x, y) => {
-        const xi = Math.floor(x), yi = Math.floor(y), u = fade(x - xi), v = fade(y - yi), X = xi & 255, Y = yi & 255;
-        const a = V[P[P[X] + Y]], b = V[P[P[X + 1] + Y]], c = V[P[P[X] + Y + 1]], d = V[P[P[X + 1] + Y + 1]];
-        return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
-      };
-      return (x, y, oct) => {
-        let sum = 0, amp = .5, f = 1, norm = 0;
-        for (let o = 0; o < oct; o++) { sum += amp * n2(x * f, y * f); norm += amp; amp *= .5; f *= 2.03; }
-        return sum / norm;
-      };
-    }
-    function fieldURL(W, H, cx, cy) {
-      const S = 4, w = Math.ceil(W / S), h = Math.ceil(H / S), ox = cx / S, oy = cy / S;
-      const fbm = noise(Math.random() * 1e9);
-      const dmax = Math.max(Math.hypot(ox, oy), Math.hypot(w - ox, oy), Math.hypot(ox, h - oy), Math.hypot(w - ox, h - oy));
-      const F = new Float32Array(w * h);
-      let mn = Infinity, mx = -Infinity;
-      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
-        const px = (x / h) * FX.freq, py = (y / h) * FX.freq;
-        const qx = fbm(px + 1.7, py + 9.2, 4), qy = fbm(px + 8.3, py + 2.8, 4);
-        const n = 1 - Math.abs(2 * fbm(px + FX.warp * (qx - .5) * 2, py + FX.warp * (qy - .5) * 2, FX.oct) - 1);
-        const f = FX.mix * (Math.hypot(x - ox, y - oy) / dmax) + (1 - FX.mix) * n;
-        F[y * w + x] = f;
-        if (f < mn) mn = f; if (f > mx) mx = f;
-      }
-      const cv = document.createElement("canvas"); cv.width = w; cv.height = h;
-      const ctx = cv.getContext("2d"), img = ctx.createImageData(w, h), D = img.data;
-      for (let i = 0; i < F.length; i++) {
-        D[i * 4] = D[i * 4 + 1] = D[i * 4 + 2] = Math.round(((F[i] - mn) / (mx - mn)) * 255);
-        D[i * 4 + 3] = 255;
-      }
-      ctx.putImageData(img, 0, 0);
-      return cv.toDataURL("image/png");
-    }
-
-    // Prepared ahead of time (and decoded) so the click starts instantly; a new shape each time.
-    let ready = false, key = "";
-    const prepare = () => {
-      const r = $("#theme-btn").getBoundingClientRect(), W = innerWidth, H = innerHeight;
-      const k = [W, H, Math.round(r.left), Math.round(r.top)].join("|");
-      if (ready && key === k) return;
-      const url = fieldURL(W, H, r.left + r.width / 2, r.top + r.height / 2);
-      [mask, image].forEach(el => { el.setAttribute("width", W); el.setAttribute("height", H); });
-      image.setAttribute("href", url);
-      key = k;
-      const pre = new Image(); pre.src = url;
-      pre.decode().catch(() => {}).then(() => { ready = true; });
-    };
-    const idle = cb => (window.requestIdleCallback ? requestIdleCallback(cb, { timeout: 2000 }) : setTimeout(cb, 300));
-    idle(prepare);
-    let rz;
-    addEventListener("resize", () => { ready = false; clearTimeout(rz); rz = setTimeout(() => idle(prepare), 300); });
-
-    let busy = false;
-    return () => {
-      if (busy) return;
-      busy = true;
-      if (!ready) prepare();
-      ready = false;
-      const T0 = .06, T1 = 1 + FX.soft;
-      const at = p => T0 + (T1 - T0) * (1 - Math.pow(1 - p, 2.2));
-      setT(at(0));
-      root.classList.add("fx-theme");
-      const vt = document.startViewTransition(flipTheme);
-      vt.ready.then(() => {
-        root.animate({ opacity: [1, 1] }, { duration: FX.dur, pseudoElement: "::view-transition-new(root)" });
-        const start = performance.now();
-        const tick = now => {
-          const p = Math.min(1, Math.max(0, (now - start) / FX.dur));
-          setT(at(p));
-          if (p < 1) requestAnimationFrame(tick);
-        };
-        requestAnimationFrame(tick);
-      }).catch(() => {});
-      vt.finished.finally(() => { root.classList.remove("fx-theme"); busy = false; idle(prepare); });
-    };
-  })();
-
-  $("#theme-btn").addEventListener("click", () => {
-    if (themeFx && !matchMedia("(prefers-reduced-motion: reduce)").matches) themeFx();
-    else flipTheme();
+  /* Theme switch: the new theme opens as a circle from the toggle (View Transitions + clip-path).
+     Strong ease-out (the --ease token): most of the screen is covered in the first ~200 ms, the edge settles after.
+     Reduced motion: a short crossfade instead. No View Transitions support: instant switch. */
+  const themeBtn = $("#theme-btn");
+  let themeBusy = false;
+  themeBtn.addEventListener("click", () => {
+    if (!document.startViewTransition) return flipTheme();
+    if (themeBusy) return;
+    themeBusy = true;
+    const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    root.classList.add(calm ? "vt-fade" : "vt-reveal");
+    const vt = document.startViewTransition(flipTheme);
+    if (!calm) vt.ready.then(() => {
+      const r = themeBtn.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2;
+      const end = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));   // reach the farthest corner
+      root.animate(
+        { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${end}px at ${x}px ${y}px)`] },
+        { duration: 520, easing: getComputedStyle(root).getPropertyValue("--ease").trim() || "ease-out", pseudoElement: "::view-transition-new(root)" }
+      );
+    }).catch(() => {});
+    vt.finished.finally(() => { root.classList.remove("vt-reveal", "vt-fade"); themeBusy = false; });
   });
 
   // ---------- ID card ----------
   const card = $("#id-card");
-  card.addEventListener("click", () => card.classList.toggle("flipped"));
+  card.addEventListener("click", () => card.setAttribute("aria-pressed", card.classList.toggle("flipped")));
 
+  // ---------- Public repo count, live from the GitHub API (cached per session; the HTML number is the fallback) ----------
+  const repoEl = $("#repo-count");
+  const showRepos = n => { if (Number.isFinite(n) && n > 0) repoEl.textContent = n; };
+  const cachedRepos = +sessionStorage.getItem("pf-repos");
+  if (cachedRepos) showRepos(cachedRepos);
+  else fetch("https://api.github.com/users/borizSam")
+    .then(r => (r.ok ? r.json() : null))
+    .then(d => { if (d && d.public_repos) { showRepos(d.public_repos); sessionStorage.setItem("pf-repos", d.public_repos); } })
+    .catch(() => {});
 
-  // ---------- Typed role ----------
-  const ROLES = ["Cloud & DevOps Engineer", "AWS · Terraform · Kubernetes", "Ingeniería Informática (UOC)"];
-  const typed = $("#typed");
-  let typeRun = 0;
-  async function startTyping() {
-    const run = ++typeRun;
-    if (reduced) { typed.textContent = ROLES[0] + " → " + ROLES[2]; return; }
-    const wait = ms => new Promise(r => setTimeout(r, ms));
-    for (let i = 0; run === typeRun; i = (i + 1) % ROLES.length) {
-      for (let c = 1; c <= ROLES[i].length && run === typeRun; c++) { typed.textContent = ROLES[i].slice(0, c); await wait(55); }
-      await wait(1400);
-      for (let c = ROLES[i].length; c >= 0 && run === typeRun; c--) { typed.textContent = ROLES[i].slice(0, c); await wait(28); }
-      await wait(250);
-    }
-  }
 
   // ---------- Mobile menu ----------
   const nav = $("#nav"), menuBtn = $("#menu-btn");
@@ -309,7 +216,6 @@
   const rev = new IntersectionObserver(es => es.forEach(en => {
     if (!en.isIntersecting) return;
     en.target.classList.add("in");
-    if (en.target.id) links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + en.target.id));
   }), { threshold: .15 });
   $$(".block").forEach(s => { s.classList.add("reveal"); rev.observe(s); });
   // L2: staggered reveal for list items (timeline, cards, roadmap)
@@ -325,125 +231,75 @@
     stag.observe(el);
   });
 
-  // L2: nav surface gets denser once the page is scrolled
-  const navEl = $("#nav");
-  let ticking = false;
+  // Nav: denser surface once scrolled · active section (sliding underline + prompt path) · page progress bar
+  const navEl = $("#nav"), navInd = $("#nav-ind"), navPath = $("#nav-path");
+  const navSecs = links.map(a => $(a.getAttribute("href"))).filter(Boolean);
+  let ticking = false, current = null;
+  const moveInd = () => {
+    const a = links.find(l => l.classList.contains("active"));
+    if (!a || getComputedStyle(navInd).display === "none") { navInd.style.opacity = 0; return; }
+    const nr = a.parentElement.getBoundingClientRect(), r = a.getBoundingClientRect();
+    navInd.style.opacity = 1;
+    navInd.style.transform = `translateX(${r.left - nr.left}px) scaleX(${r.width})`;
+  };
+  const navUpdate = () => {
+    navEl.classList.toggle("scrolled", scrollY > 24);
+    const max = document.documentElement.scrollHeight - innerHeight;
+    navEl.style.setProperty("--prog", max > 0 ? Math.min(1, scrollY / max).toFixed(4) : 0);
+    const line = innerHeight * .4;
+    const sec = navSecs.filter(s => s.getBoundingClientRect().top <= line).pop() || null;
+    if (sec !== current) {
+      current = sec;
+      links.forEach(a => a.classList.toggle("active", !!sec && a.getAttribute("href") === "#" + sec.id));
+      navPath.textContent = sec ? "~/" + sec.id : "~";
+      moveInd();
+    }
+  };
   const onScroll = () => {
     if (!ticking) {
       ticking = true;
-      requestAnimationFrame(() => { navEl.classList.toggle("scrolled", window.scrollY > 24); ticking = false; });
+      requestAnimationFrame(() => { navUpdate(); ticking = false; });
     }
   };
+  addEventListener("resize", moveInd);
+  document.fonts?.ready.then(moveInd);
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
   // ---------- Drag-scroll for achievements ----------
   const sc = $("#scroller");
-  let down = false, sx = 0, sl = 0;
-  sc.addEventListener("pointerdown", e => { down = true; sx = e.clientX; sl = sc.scrollLeft; sc.classList.add("drag"); });
+  let down = false, sx = 0, sl = 0, dragged = false;
+  sc.addEventListener("pointerdown", e => { down = true; dragged = false; sx = e.clientX; sl = sc.scrollLeft; sc.classList.add("drag"); });
   window.addEventListener("pointerup", () => { down = false; sc.classList.remove("drag"); });
-  sc.addEventListener("pointermove", e => { if (down) sc.scrollLeft = sl - (e.clientX - sx); });
+  sc.addEventListener("pointermove", e => { if (!down) return; if (Math.abs(e.clientX - sx) > 5) dragged = true; sc.scrollLeft = sl - (e.clientX - sx); });
+  sc.addEventListener("dragstart", e => e.preventDefault());   // links inside must not start a native drag
+  sc.addEventListener("click", e => { if (dragged) e.preventDefault(); }, true);   // a drag is not a click on the Credly link
 
-  // ---------- Hero character: pre-keyed clip (colour on top, alpha below) drawn in WebGL + speech clouds synced to it ----------
-  // hero animation (15 s loop): 0–1 uncrosses · 1–2.5 waves hello · 3–4.8 points down · 5–7.8 types on an invisible keyboard (KBD) ·
-  // 9–10.3 thumbs up (with a wink) · 11.6–15 arms crossed again
-  const BEATS = [
-    { id: "hi", from: 0.5, to: 2.9, es: "¡Hola! Bienvenido a mi portafolio 👋", en: "Hi! Welcome to my portfolio 👋" },
-    { id: "down", from: 3.2, to: 4.9, es: "Baja y mira lo que hago 👇", en: "Scroll down and see what I do 👇" },
-    { id: "deploy", from: 5.0, to: 7.9, es: "Desplegando… 🚀", en: "Deploying… 🚀" },
-  ];
-  const KBD = [4.9, 7.9];   // the holographic keyboard is visible while he types
-  const PEEK = [];   // moments when the egg halves glow (none: the egg is meant to be found, not hinted)
-  const hero = $("#hero"), cv = $("#anim"), vid = $("#hero-vid"), poster = $("#hero-poster"), bubble = $("#bubble"), kbd = $("#kbd");
-  let beat = null;
-  const egg = { state: "apart", hits: 0, solved: false, at: 0, moved: null, home: null };   // easter egg state (see below)
-  const beatText = b => (b.done && egg.solved ? b.done : b)[lang];
+  const hero = $("#hero");
+  const egg = { state: "apart", solved: false };   // easter egg state (see below)
 
-  // Holographic keyboard: rows of keys, a random one lights up now and then while it is visible
-  const ROWS = [12, 11, 10, 7];
-  kbd.innerHTML = ROWS.map((n, r) => `<div class="kr">${Array.from({ length: n }, (_, i) => `<i${r === 3 && i === 3 ? ' class="sp"' : ""}></i>`).join("")}</div>`).join("");
-  const keys = [...kbd.querySelectorAll("i")];
-  setInterval(() => {
-    if (!kbd.classList.contains("show")) return;
-    const k = keys[Math.floor(Math.random() * keys.length)];
-    k.classList.add("hit");
-    setTimeout(() => k.classList.remove("hit"), 140);
-  }, 85);
+  // ---------- NASA Space Apps certificate: the thumbnail opens it full size in a modal dialog ----------
+  const certDlg = $("#cert-dlg");
+  $("#cert-open").addEventListener("click", () => { certDlg.showModal(); document.body.classList.add("lock"); });
+  $("#cert-close").addEventListener("click", () => certDlg.close());
+  certDlg.addEventListener("click", e => { if (e.target === certDlg) certDlg.close(); });   // click on the backdrop
+  certDlg.addEventListener("close", () => document.body.classList.remove("lock"));
 
-  function showBeat(b) {
-    if (b === beat) return;
-    beat = b;
-    if (!b) { bubble.classList.remove("show"); return; }
-    bubble.className = "bubble b-" + b.id;
-    bubble.textContent = beatText(b);
-    void bubble.offsetWidth;   // restart the entrance transition
-    bubble.classList.add("show");
-  }
-  function syncTo(t) {
-    showBeat(BEATS.find(b => t >= b.from && t < b.to) || null);
-    kbd.classList.toggle("show", t >= KBD[0] && t < KBD[1]);
-    hero.classList.toggle("peek", egg.state === "apart" && (PEEK.some(([a, b]) => t >= a && t < b)));
-  }
-
-  // The green was keyed offline: top half is premultiplied colour, bottom half is alpha
-  function keyer(canvas) {
-    const gl = canvas.getContext("webgl", { premultipliedAlpha: true, antialias: false });
-    if (!gl) return null;
-    const shader = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); return s; };
-    const prog = gl.createProgram();
-    gl.attachShader(prog, shader(gl.VERTEX_SHADER,
-      "attribute vec2 p;varying vec2 v;void main(){v=vec2(p.x*.5+.5,.5-p.y*.5);gl_Position=vec4(p,0.,1.);}"));
-    gl.attachShader(prog, shader(gl.FRAGMENT_SHADER,
-      "precision mediump float;uniform sampler2D t;varying vec2 v;void main(){float a=texture2D(t,vec2(v.x,.5+v.y*.5)).g;" +
-      "a=smoothstep(.04,.96,a);gl_FragColor=vec4(min(texture2D(t,vec2(v.x,v.y*.5)).rgb,vec3(a)),a);}"));
-    gl.linkProgram(prog);
-    if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return null;
-    gl.useProgram(prog);
-    gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
-    const loc = gl.getAttribLocation(prog, "p");
-    gl.enableVertexAttribArray(loc);
-    gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
-    gl.bindTexture(gl.TEXTURE_2D, gl.createTexture());
-    [[gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE], [gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE], [gl.TEXTURE_MIN_FILTER, gl.LINEAR], [gl.TEXTURE_MAG_FILTER, gl.LINEAR]]
-      .forEach(([k, v]) => gl.texParameteri(gl.TEXTURE_2D, k, v));
-    return src => {
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, src);
-      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-    };
-  }
-
-  const draw = !reduced && keyer(cv);
-  if (!draw) {
-    // Still poster (reduced motion or no WebGL): just the welcome cloud
-    vid.remove();
-    (window.introReady || Promise.resolve()).then(() => setTimeout(() => showBeat(BEATS[0]), 500));
-  } else {
-    const hasVFC = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
-    const onFrame = () => {
-      draw(vid);
-      if (!hero.classList.contains("live")) hero.classList.add("live");   // hide the poster once the clip paints
-      syncTo(vid.currentTime);
-      hasVFC ? vid.requestVideoFrameCallback(onFrame) : requestAnimationFrame(onFrame);
-    };
-    if (vid.readyState >= 2) onFrame();   // the clip may have loaded before this script ran
-    else vid.addEventListener("loadeddata", onFrame, { once: true });
-    const play = () => (window.introReady || Promise.resolve()).then(() => vid.play()).catch(() => {
-      showBeat(BEATS[0]);   // autoplay blocked (e.g. low-power mode): start on the first tap
-      addEventListener("pointerdown", () => vid.play().catch(() => {}), { once: true });
-    });
-    // Only run while the hero is on screen
-    new IntersectionObserver(([en]) => { en.isIntersecting ? play() : vid.pause(); }, { threshold: 0.05 }).observe(hero);
-  }
-
-  // ---------- Hidden easter egg: two bright stars; drag one onto the other to draw a constellation ----------
+  // ---------- Hidden easter egg: two loose commits that pass for stars; drag one onto the other to merge them ----------
   const halves = [$("#egg-l"), $("#egg-r")];
   const reveal = $("#egg-reveal"), revealClose = $("#egg-close");
   const SNAP = 64;   // px between the stars' centres that counts as "joined"
-  const STAR = `<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="currentColor" opacity=".08" /><path d="M20 1L24.5 15.5L39 20L24.5 24.5L20 39L15.5 24.5L1 20L15.5 15.5Z" fill="currentColor" /></svg>`;
-  const CON = `<svg viewBox="0 0 120 130" aria-hidden="true"><polyline pathLength="1" points="22,100 60,18 98,100" /><polyline pathLength="1" points="38,70 82,70" />
-    <circle cx="22" cy="100" r="3.5" /><circle cx="60" cy="18" r="4.5" /><circle cx="98" cy="100" r="3.5" /><circle cx="38" cy="70" r="2.5" /><circle cx="82" cy="70" r="2.5" /><text x="60" y="124">ATS</text></svg>`;
-  halves.forEach(h => (h.innerHTML = STAR));
+  // A commit node (ring + dot) with a short branch stub; the stub points away from the other half
+  const NODE = stub => `<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="currentColor" opacity=".07" />` +
+    `<path d="${stub}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 4" opacity=".55" />` +
+    `<circle cx="20" cy="20" r="7" fill="none" stroke="currentColor" stroke-width="2.5" /><circle cx="20" cy="20" r="2.6" fill="currentColor" /></svg>`;
+  // git graph drawn where they meet: feature/imagine + main -> merge commit -> HEAD
+  const CON = `<svg viewBox="0 0 160 140" aria-hidden="true">
+    <path pathLength="1" d="M24 112C24 80 80 88 80 58" /><path pathLength="1" d="M136 112C136 80 80 88 80 58" /><path pathLength="1" d="M80 58V20" />
+    <circle cx="24" cy="112" r="3.5" /><circle cx="136" cy="112" r="3.5" /><circle cx="80" cy="58" r="5" /><circle cx="80" cy="20" r="4" />
+    <text x="24" y="130">feature/imagine</text><text x="136" y="130">main</text><text x="80" y="8">HEAD</text></svg>`;
+  halves[0].innerHTML = NODE("M14 26L4 36");   // left node trails down-left
+  halves[1].innerHTML = NODE("M26 14L36 4");   // right node trails up-right
   let con = null;
 
   const other = h => halves[h === halves[0] ? 1 : 0];
@@ -523,50 +379,215 @@
   reveal.addEventListener("click", e => { if (e.target === reveal) closeReveal(); });
   addEventListener("keydown", e => { if (e.key === "Escape") closeReveal(); });
 
-  applyLang();
+  // ---------- Hidden terminal: type "sudo" anywhere, press ` or Ctrl+Alt+T, or tap the logo 5 times ----------
+  const term = $("#term"), tOut = $("#term-out"), tIn = $("#term-in");
+  const T = (es, en) => (lang === "en" ? en : es);
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const PROMPT = '<b class="tp">visitor@borizsam</b>:~$ ';
+  const print = (html, cls = "") => { const d = document.createElement("div"); if (cls) d.className = cls; d.innerHTML = html; tOut.appendChild(d); tOut.scrollTop = tOut.scrollHeight; };
+  const text = el => ($(el)?.textContent || "").trim();
+  const link = (href, label) => `<a href="${href}" target="_blank" rel="noopener">${esc(label || href)}</a>`;
+  const SECTIONS = { about: "about", skills: "skills", experience: "experience", exp: "experience", achievements: "achievements", projects: "projects", contact: "contact" };
+  const TUX = ["    .--.     ", "   |o_o |    ", "   |:_/ |    ", "  //   \\ \\   ", " (|     | )  ", "/'\\_   _/`\\  ", "\\___)=(___/  "];
+  let history = [], hIdx = 0, greeted = false;
 
-  // ---------- Matrix rain (full-screen background layer) ----------
-  const mx = $("#matrix");
-  if (mx && !reduced && getComputedStyle(mx).display !== "none") {
-    const ctx = mx.getContext("2d");
-    const GLYPHS = "ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789ABCDEF";
-    const FS = 16;
-    let cols = [], w = 0, h = 0, dpr = 1, running = false, last = 0;
-    const resize = () => {
-      dpr = Math.min(devicePixelRatio || 1, 2);
-      w = mx.clientWidth; h = mx.clientHeight;
-      mx.width = w * dpr; mx.height = h * dpr;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const n = Math.ceil(w / FS);
-      cols = Array.from({ length: n }, () => ({ y: -Math.random() * h / FS, v: .25 + Math.random() * .5 }));
-    };
-    const frame = (t) => {
-      if (!running) return;
-      if (t - last < 50) { requestAnimationFrame(frame); return; }   // ~20 fps: calm, cheap
-      last = t;
-      const trail = getComputedStyle(root).getPropertyValue("--ink").trim() || "#ffffff";   // white in dark mode
-      ctx.globalCompositeOperation = "destination-out";   // fade trails to transparent
-      ctx.fillStyle = "rgba(0,0,0,.16)";
-      ctx.fillRect(0, 0, w, h);
-      ctx.globalCompositeOperation = "source-over";
-      ctx.font = FS + "px ui-monospace, monospace";
-      cols.forEach((c, i) => {
-        const ch = GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
-        const x = i * FS, y = c.y * FS;
-        ctx.fillStyle = "#ffffff";
-        ctx.fillText(ch, x, y);                 // bright head
-        ctx.fillStyle = trail;
-        ctx.globalAlpha = .7;
-        ctx.fillText(GLYPHS[Math.floor(Math.random() * GLYPHS.length)], x, y - FS);
-        ctx.globalAlpha = 1;
-        c.y += c.v;
-        if (y > h && Math.random() > .975) { c.y = -Math.random() * 10; c.v = .25 + Math.random() * .5; }
-      });
-      requestAnimationFrame(frame);
-    };
-    resize();
-    addEventListener("resize", resize);
-    running = true;   // full-viewport layer; the browser already pauses rAF in background tabs
-    requestAnimationFrame(frame);
+  const CMDS = {
+    help: () => print(esc(T(
+`Comandos:
+  whoami · neofetch      quién soy
+  ls · cat <archivo>     mira los archivos
+  skills · projects      lo que uso y lo que he hecho
+  experience             git log de mi carrera
+  contact · cv           escríbeme o descarga el CV
+  open <sección>         about · skills · experience · projects · contact
+  theme · lang           cambia el tema o el idioma
+  clear · exit
+Hay más. Prueba cosas que escribirías en un Linux.`,
+`Commands:
+  whoami · neofetch      who I am
+  ls · cat <file>        look at the files
+  skills · projects      what I use and what I've built
+  experience             git log of my career
+  contact · cv           write to me or download the CV
+  open <section>         about · skills · experience · projects · contact
+  theme · lang           switch theme or language
+  clear · exit
+There's more. Try things you'd type on a Linux box.`)), "pre"),
+    whoami: () => print("Boris Ivan Huarachi Pérez — DevOps Engineer @ OCA Global · Barcelona"),
+    neofetch: () => {
+      const info = ['<b class="tp">boris</b>@<b class="tp">prod</b>', "----------",
+        "<b>OS</b>: Debian GNU/Linux (portfolio edition)", "<b>Host</b>: borizsam.github.io", `<b>Kernel</b>: ${T("HTML + CSS + JS, sin frameworks", "HTML + CSS + JS, no frameworks")}`,
+        `<b>Uptime</b>: ${T("5+ años en IT", "5+ years in IT")}`, "<b>Shell</b>: bash", "<b>Role</b>: DevOps Engineer @ OCA Global",
+        "<b>Stack</b>: AWS · Azure · Terraform · Docker · K8s · Jenkins · Ansible", `<b>Study</b>: ${T("Ing. Informática · UOC", "Computer Engineering · UOC")}`, "<b>Location</b>: Barcelona"];
+      print(info.map((l, i) => `<span class="tux">${esc(TUX[i] || " ".repeat(13))}</span>${l}`).join("\n"), "pre");
+    },
+    ls: a => print((a.includes("-a") || a.includes("-la") ? '<span class="dim">.secret</span>  ' : "") + 'about.txt  contact.txt  cv.pdf  <b class="td">projects/</b>  <b class="td">skills/</b>'),
+    cat: a => {
+      const f = (a[0] || "").replace(/^\.\//, "");
+      if (!f) return print(T("uso: cat &lt;archivo&gt;", "usage: cat &lt;file&gt;"));
+      if (f === "about.txt") return print(esc(text('[data-i18n="about.p1"]') + "\n\n" + text('[data-i18n="about.p2"]')), "pre");
+      if (f === "contact.txt") return CMDS.contact();
+      if (f === "cv.pdf") return print(T("cat: cv.pdf: es un binario. Prueba <b>cv</b>.", "cat: cv.pdf: binary file. Try <b>cv</b>."));
+      if (f === ".secret") return print(T("Dos de las estrellas del cielo de arriba no son estrellas: son commits sueltos. Haz merge.", "Two of the stars in the sky up top aren't stars: they're loose commits. Merge them."));
+      if (/^(projects|skills)\/?$/.test(f)) return print(`cat: ${esc(f)}: ${T("es un directorio", "Is a directory")}`);
+      print(`cat: ${esc(f)}: ${T("No existe el archivo o el directorio", "No such file or directory")}`);
+    },
+    skills: () => {
+      const rows = Object.keys(CATS.es).filter(k => k !== "all").map(k =>
+        `<b class="td">${esc(CATS[lang][k].padEnd(14))}</b>` + SK.filter(e => e.c === k).map(e => (e.t ? '<span class="tw">~</span>' : '<span class="tok">+</span>') + esc(e.n)).join("  "));
+      print(rows.join("\n") + `\n\n<span class="tok">+</span> ${T("en uso", "in use")}  <span class="tw">~</span> ${T("en entrenamiento", "in training")}`, "pre");
+    },
+    projects: () => print($$("#projects .grid3 .card").map(c => {
+      const a = $("a.link", c);
+      return `<b class="td">${esc($("h3, h4", c).textContent.trim())}</b>\n  ${a ? link(a.href, a.href.replace("https://", "")) : ""}`;
+    }).join("\n"), "pre"),
+    experience: () => print(esc($$(".timeline > li").map((li, i) => {
+      const hash = ["a3f9c21", "7be04d8", "1c5e9f0"][i] || "0000000";
+      return `${hash} ${i === 0 ? "(HEAD -> main) " : ""}${$("h3", li).childNodes[0].textContent.trim()} · ${$("h3 small", li).textContent.trim()} · ${$("time", li).textContent.trim()}`;
+    }).join("\n")), "pre"),
+    contact: () => print(["Email: " + link("mailto:bhuarachiperez@gmail.com", "bhuarachiperez@gmail.com"),
+      "LinkedIn: " + link("https://www.linkedin.com/in/boris-ivan-huarachi-perez-859638219", "linkedin.com/in/boris-ivan-huarachi-perez"),
+      "GitHub: " + link("https://github.com/borizSam", "github.com/borizSam")].join("\n"), "pre"),
+    cv: () => { const a = document.createElement("a"); a.href = "assets/cv.pdf"; a.download = ""; a.click(); print(T("Descargando cv.pdf…", "Downloading cv.pdf…")); },
+    open: a => {
+      const id = SECTIONS[(a[0] || "").replace(/\/$/, "")];
+      if (!id) return print(T("uso: open about | skills | experience | projects | contact", "usage: open about | skills | experience | projects | contact"));
+      closeTerm(); setTimeout(() => $("#" + id).scrollIntoView({ behavior: reduced ? "auto" : "smooth" }), 50);
+    },
+    theme: () => { closeTerm(); setTimeout(() => $("#theme-btn").click(), 80); },
+    lang: () => { $("#lang-btn").click(); print(T("Idioma: español", "Language: English")); },
+    clear: () => { tOut.innerHTML = ""; },
+    exit: () => closeTerm(),
+    history: () => print(esc(history.map((h, i) => `${String(i + 1).padStart(4)}  ${h}`).join("\n")), "pre"),
+    pwd: () => print("/home/visitor"),
+    date: () => print(esc(new Date().toString())),
+    echo: a => print(esc(a.join(" "))),
+    uptime: () => print(T(" arriba 5+ años, 1 usuario, carga media: café, café, café", " up 5+ years, 1 user, load average: coffee, coffee, coffee")),
+    sudo: () => print("[sudo] password for visitor: ********\nvisitor is not in the sudoers file. This incident will be reported.", "pre terr"),
+    rm: a => print(a.join(" ").includes("/") ? T("rm: no se puede borrar '/': este portfolio es infraestructura inmutable 😉", "rm: cannot remove '/': this portfolio is immutable infrastructure 😉") : "rm: missing operand", "terr"),
+    kubectl: a => print(a[0] === "get" && /^pods?$/.test(a[1] || "") ?
+`NAME                          READY   STATUS    RESTARTS   AGE
+portfolio-web-7f9c6d-x2k8p    1/1     Running   0          5y
+coffee-daemon-5b8d9-qq2lm     1/1     Running   42         5y
+boris-learning-0              1/1     Running   0          ∞` : esc("kubectl: try 'kubectl get pods'"), "pre"),
+    docker: a => print(a[0] === "ps" ?
+`CONTAINER ID   IMAGE                 STATUS        NAMES
+3f1a9c2e7b40   borizsam/portfolio    Up 5 years    portfolio
+9d2e41b0c3aa   aws/solutions-arch    Up (study)    next-cert` : esc("docker: try 'docker ps'"), "pre"),
+    terraform: a => print(a[0] === "apply" ? T("Apply complete! Resources: 1 added (tú, como visitante), 0 changed, 0 destroyed.", "Apply complete! Resources: 1 added (you, as a visitor), 0 changed, 0 destroyed.")
+      : "No changes. Your infrastructure matches the configuration."),
+    git: a => (a[0] === "log" ? CMDS.experience() : a[0] === "status" ? print("On branch main\nYour branch is ahead of 'origin/junior' by 5+ years.\nnothing to commit, working tree clean", "pre") : print(esc("git: try 'git log' or 'git status'"))),
+    ping: a => print(esc(`64 bytes from ${a[0] || "boris"}: icmp_seq=1 ttl=64 hire_me=yes time=0.1 ms`)),
+    vim: () => print(T("Has entrado en vim. Para salir: <b>:q!</b> …es broma, ya estás fuera.", "You've entered vim. To quit: <b>:q!</b> …just kidding, you're already out.")),
+  };
+  Object.assign(CMDS, { "?": CMDS.help, man: CMDS.help, cd: CMDS.open, vi: CMDS.vim, nano: CMDS.vim, logout: CMDS.exit, quit: CMDS.exit, contacto: CMDS.contact, ll: () => CMDS.ls(["-la"]) });
+
+  function run(line) {
+    const raw = line.trim();
+    print(PROMPT + esc(raw), "tcmd");
+    if (!raw) return;
+    history.push(raw); hIdx = history.length;
+    const [cmd, ...args] = raw.split(/\s+/);
+    const fn = CMDS[cmd.toLowerCase()];
+    fn ? fn(args) : print(`bash: ${esc(cmd)}: command not found` + T(" · prueba <b>help</b>", " · try <b>help</b>"), "terr");
   }
+  function openTerm() {
+    if (term.open) return;
+    term.showModal(); document.body.classList.add("lock");
+    if (!greeted) {
+      greeted = true;
+      print(T("Bienvenido a la shell de Boris. Escribe <b>help</b> para ver los comandos.", "Welcome to Boris's shell. Type <b>help</b> to see the commands."), "dim");
+    }
+    tIn.focus();
+  }
+  function closeTerm() { if (term.open) term.close(); }
+  term.addEventListener("close", () => document.body.classList.remove("lock"));
+  term.addEventListener("click", e => { if (e.target === term) closeTerm(); else if (!e.target.closest("a, button")) tIn.focus(); });
+  $("#term-x").addEventListener("click", closeTerm);
+  $("#term-form").addEventListener("submit", e => { e.preventDefault(); run(tIn.value); tIn.value = ""; });
+  tIn.addEventListener("keydown", e => {
+    if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+      e.preventDefault();
+      hIdx = Math.max(0, Math.min(history.length, hIdx + (e.key === "ArrowUp" ? -1 : 1)));
+      tIn.value = history[hIdx] || "";
+    } else if (e.key === "Tab") {
+      e.preventDefault();
+      const hits = Object.keys(CMDS).filter(c => c.startsWith(tIn.value.trim().toLowerCase()) && /^[a-z]/.test(c));
+      if (hits.length === 1) tIn.value = hits[0] + " ";
+      else if (hits.length > 1) print(hits.join("  "), "dim");
+    } else if (e.key === "l" && e.ctrlKey) { e.preventDefault(); CMDS.clear(); }
+  });
+
+  // Triggers
+  let typedKeys = "";
+  addEventListener("keydown", e => {
+    if (term.open || e.target.closest?.("input, textarea, [contenteditable]")) return;
+    if ((e.ctrlKey && e.altKey && e.key.toLowerCase() === "t") || e.key === "`") { e.preventDefault(); return openTerm(); }
+    if (e.key.length !== 1 || e.ctrlKey || e.metaKey || e.altKey) return;
+    typedKeys = (typedKeys + e.key.toLowerCase()).slice(-4);
+    if (typedKeys === "sudo") { typedKeys = ""; openTerm(); }
+  });
+  let taps = 0, tapTimer;
+  $(".logo").addEventListener("click", e => {
+    taps++; clearTimeout(tapTimer); tapTimer = setTimeout(() => (taps = 0), 1500);
+    if (taps >= 5) { taps = 0; e.preventDefault(); openTerm(); }
+  });
+  // A hint for whoever opens DevTools
+  console.log("%c boris@prod:~$ %c ¿Curioseando? Escribe \"sudo\" en la página. · Curious? Type \"sudo\" on the page.",
+    "background:#b3122e;color:#fff;font-weight:700;padding:2px 4px;border-radius:3px", "color:inherit");
+
+  // ---------- Footer puzzle: you're inside vim. Get out. ----------
+  const vimWin = $("#vim-win"), vimIn = $("#vim-in"), vimMsg = $("#vim-msg"), vimMode = $("#vim-mode"), vimEdit = $("#vim-edit");
+  let vimFails = 0, vimT0 = 0;
+  const vimSay = (html, err) => { vimMsg.innerHTML = html; vimMsg.classList.toggle("err", !!err); };
+  const vimHint = () => {
+    vimFails++;
+    if (vimFails === 3) return T(" · Pista: empieza por dos puntos.", " · Hint: it starts with a colon.");
+    if (vimFails === 5) return T(" · Pista: <b>:q</b> y algo que grite.", " · Hint: <b>:q</b> and something that shouts.");
+    if (vimFails >= 7) return T(" · Vale, vale: <b>:q!</b> y Enter.", " · Fine, fine: <b>:q!</b> and Enter.");
+    return "";
+  };
+  function vimExit() {
+    const secs = Math.max(1, Math.round((performance.now() - (vimT0 || performance.now())) / 1000));
+    $("#vim-time").textContent = T(`Saliste de vim en ${secs} s.`, `You exited vim in ${secs} s.`);
+    $("#vim").classList.add("done");
+    vimIn.blur();
+    vimEdit.classList.add("closing");                              // the editor fades, the same card reports the exit
+    setTimeout(() => {
+      vimEdit.hidden = true;
+      $("#vim-title").textContent = "exit 0";
+      vimWin.classList.add("exited");
+      $("#vim-ok").hidden = false; $("#vim-quote").hidden = false;
+      requestAnimationFrame(() => vimWin.classList.add("shown"));
+    }, reduced ? 0 : 320);
+  }
+  function vimRun(raw) {
+    const c = raw.trim();
+    if (!c) return;
+    const q = c.replace(/\s+/g, "");
+    if (/^:(q|qa|wq|x|wqa|xa|cq)!$/.test(q) || q === "ZQ") return vimExit();
+    if (/^:(q|qa|quit|quita|cq)$/.test(q)) return vimSay("E37: No write since last change (add ! to override)" + vimHint(), true);
+    if (/^:(w|wq|x|wqa|xa|write|update)!?$/.test(q) || q === "ZZ") return vimSay("E45: 'readonly' option is set (add ! to override)" + vimHint(), true);
+    if (/^:(h|help)\b/.test(q)) return vimSay(T("Para salir: <b>:q!</b> (sin guardar). Ya está, ese era el secreto.", "To quit: <b>:q!</b> (without saving). That's it, that was the secret."));
+    if (/^:!/.test(q)) return vimSay(T("Buen intento, pero aquí no hay shell. Primero sal de vim.", "Nice try, but there's no shell here. Exit vim first."), true);
+    if (/^(exit|quit|salir|logout|bye|adios|adiós)$/i.test(q)) return vimSay(`E492: Not an editor command: ${esc(c)}` + vimHint(), true);
+    if (/^[ia]$/i.test(q)) { vimMode.textContent = "-- INSERT --"; return vimSay(T("Ahora estás en modo INSERT. Eso no te saca de aquí: pulsa Esc.", "Now you're in INSERT mode. That won't get you out: press Esc.")); }
+    if (q[0] !== ":") return vimSay(T(`Estás en modo NORMAL: "${esc(c)}" no hace nada útil. Los comandos empiezan por <b>:</b>`, `You're in NORMAL mode: "${esc(c)}" does nothing useful. Commands start with <b>:</b>`) + vimHint(), true);
+    vimSay(`E492: Not an editor command: ${esc(c.slice(1))}` + vimHint(), true);
+  }
+  $("#vim-form").addEventListener("submit", e => { e.preventDefault(); if (!vimT0) vimT0 = performance.now(); vimRun(vimIn.value); vimIn.value = ""; });
+  vimIn.addEventListener("focus", () => { if (!vimT0) vimT0 = performance.now(); });
+  vimIn.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      e.preventDefault();
+      if (vimMode.textContent !== "-- NORMAL --") { vimMode.textContent = "-- NORMAL --"; vimSay(""); }
+      else vimSay(T("Ya estás en modo NORMAL. Pulsar Esc más fuerte no ayuda.", "You're already in NORMAL mode. Pressing Esc harder won't help."));
+    } else if (e.key === "c" && e.ctrlKey) {
+      e.preventDefault();
+      vimSay("Type  :qa!  and press &lt;Enter&gt; to abandon all changes and exit Vim");
+    }
+  });
+  vimWin.addEventListener("click", () => vimIn.focus());
+
+  applyLang();
 })();

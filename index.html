@@ -5,78 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boris Huarachi — Cloud &amp; DevOps Engineer</title>
   <meta name="description" content="Portafolio de Boris Ivan Huarachi Pérez — Cloud &amp; DevOps Engineer camino a Cloud Architect." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23111'/><text x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23fff'>B</text></svg>" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="canonical" href="https://borizsam.github.io/" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <meta property="og:title" content="Boris Huarachi — Cloud &amp; DevOps Engineer" />
   <meta property="og:description" content="DevOps Engineer en OCA Global, camino a Cloud Architect." />
   <meta property="og:type" content="website" />
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=46" />
+  <meta property="og:url" content="https://borizsam.github.io/" />
+  <meta property="og:image" content="https://borizsam.github.io/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Boris Huarachi — DevOps Engineer" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Boris Ivan Huarachi Pérez","jobTitle":"DevOps Engineer","worksFor":{"@type":"Organization","name":"OCA Global"},"address":{"@type":"PostalAddress","addressLocality":"Barcelona","addressCountry":"ES"},"url":"https://borizsam.github.io/","sameAs":["https://github.com/borizSam","https://www.linkedin.com/in/boris-ivan-huarachi-perez-859638219"]}</script>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&family=Orbitron:wght@800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&family=Orbitron:wght@800&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&family=Orbitron:wght@800&display=swap" /></noscript>
+  <link rel="stylesheet" href="styles.css?v=62" />
   <script>try{var d=document.documentElement;if(sessionStorage.getItem("intro"))d.classList.add("no-intro");d.dataset.theme=sessionStorage.getItem("pf-theme")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
 </head>
 <body>
-  <div class="intro" id="intro" role="status" aria-label="Cargando">
-    <canvas class="intro-portrait" id="intro-portrait" aria-hidden="true"></canvas>
-    <canvas class="intro-dots" id="intro-dots" aria-hidden="true"></canvas>
-  <div class="intro-meta intro-meta-tl" aria-hidden="true">boris@debian · tty1</div>
-  <div class="intro-meta intro-meta-br" aria-hidden="true">41.39°N 2.17°E · Barcelona</div>
-    <div class="intro-box">
-      <p class="intro-cmd"><span class="u">boris@prod</span><span class="d"> :~$ </span><span id="intro-typed"></span><i class="caret"></i></p>
-      <ul class="intro-log" id="intro-log" aria-hidden="true"></ul>
-      <ol class="intro-steps" id="intro-steps">
-        <li><b><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></b><span>BUILD</span></li>
-        <li><b><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></b><span>TEST</span></li>
-        <li><b><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></b><span>DEPLOY</span></li>
-        <li><b><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></b><span>RELEASE</span></li>
-      </ol>
-      <div class="intro-line"><span id="intro-status">› initializing build environment…</span><strong><span id="intro-pct">0</span><em>%</em></strong></div>
+  <!-- ¿Leyendo el código fuente? Buen instinto. Escribe "sudo" en cualquier parte de la página. · Reading the source? Good instinct. Type "sudo" anywhere on the page. -->
+  <div class="intro" id="intro" role="status" aria-label="Cargando" data-i18n-label="a.loading">
+    <canvas class="intro-field" id="intro-field" aria-hidden="true"></canvas>
+    <div class="intro-hud" aria-hidden="true">
+      <span class="ih ih-tl">BORIS HUARACHI <i>/ DEVOPS ENGINEER</i></span>
+      <span class="ih ih-tr"><span id="intro-stage">00 — PROVISION</span><b><span id="intro-pct">000</span> / 100</b></span>
+      <span class="ih ih-bl">REQ/S <b id="intro-rps">0</b></span>
+      <span class="ih ih-br">tty1 · 41.39°N 2.17°E · BARCELONA</span>
     </div>
   </div>
-  <canvas class="matrix" id="matrix" aria-hidden="true"></canvas>
   <div class="nebula" aria-hidden="true"></div>
   <canvas class="cursor-field" id="cursor-field" aria-hidden="true"></canvas>
-  <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+  <canvas class="scene" id="scene" aria-hidden="true"></canvas>
   <div class="cur-ring" id="cur-ring" aria-hidden="true"></div>
   <div class="cur-dot" id="cur-dot" aria-hidden="true"></div>
     <a class="skip" href="#top" data-i18n="skip">Saltar al contenido</a>
   <header class="nav" id="nav">
-    <a class="logo" href="#top"><span class="mark">B</span><span class="who">Boris</span></a>
-    <nav id="menu" aria-label="Secciones">
+    <a class="logo" href="#top" aria-label="Boris — inicio" data-i18n-label="a.home"><span class="mark">B</span><span class="who" aria-hidden="true">boris<span class="host">@prod</span>:<span class="path" id="nav-path">~</span><span class="dl">$</span></span></a>
+    <nav id="menu" aria-label="Secciones" data-i18n-label="a.sections">
       <a href="#about" data-i18n="nav.about">Sobre mí</a>
       <a href="#skills" data-i18n="nav.skills">Skills</a>
       <a href="#experience" data-i18n="nav.exp">Experiencia</a>
       <a href="#achievements" data-i18n="nav.ach">Logros</a>
       <a href="#projects" data-i18n="nav.proj">Proyectos</a>
       <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      <span class="nav-ind" id="nav-ind" aria-hidden="true"></span>
     </nav>
     <div class="nav-actions">
-      <button id="theme-btn" class="ghost" aria-label="Tema">◐</button>
-      <button id="lang-btn" class="ghost" aria-label="Idioma">EN</button>
-      <button id="menu-btn" class="ghost menu-btn" aria-label="Menú" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+      <button id="theme-btn" class="ghost" aria-label="Cambiar tema claro/oscuro" data-i18n-label="a.theme">◐</button>
+      <button id="lang-btn" class="ghost" aria-label="Switch to English" data-i18n-label="a.lang">EN</button>
+      <button id="menu-btn" class="ghost menu-btn" aria-label="Menú" data-i18n-label="a.menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero" id="hero">
-      <div class="ghost-name" aria-hidden="true">BORIS</div>
+      <!-- Hidden easter egg: two loose commits that look like stars in the sky; merge them -->
+      <button class="egg-half egg-l" id="egg-l" type="button" data-i18n-label="egg.half" aria-label="Un commit suelto: arrástralo hasta el otro para hacer merge"></button>
+      <button class="egg-half egg-r" id="egg-r" type="button" data-i18n-label="egg.half" aria-label="Un commit suelto: arrástralo hasta el otro para hacer merge"></button>
 
-      <!-- Hidden easter egg: two stars that look like part of the sky; join them to draw a constellation -->
-      <button class="egg-half egg-l" id="egg-l" type="button" data-i18n-label="egg.half" aria-label="Una estrella brillante: arrástrala hasta la otra"></button>
-      <button class="egg-half egg-r" id="egg-r" type="button" data-i18n-label="egg.half" aria-label="Una estrella brillante: arrástrala hasta la otra"></button>
-
-      <div class="hero-stage" id="stage">
-        <img class="anim poster" id="hero-poster" alt="" />
-        <canvas class="anim" id="anim" width="640" height="1080" role="img" aria-label="Personaje 3D"></canvas>
-        <video class="vid-src" id="hero-vid" muted playsinline loop preload="auto" aria-hidden="true"></video>
-        <div class="kbd" id="kbd" aria-hidden="true"></div>
-        <p class="bubble" id="bubble" aria-live="polite"></p>
-      </div>
       <div class="hero-text">
         <p class="eyebrow" data-i18n="hero.eyebrow">Barcelona</p>
         <h1>DevOps<br />Engineer<span class="dot">.</span></h1>
-        <p class="role"><span id="typed"></span><span class="caret">|</span></p>
         <p class="lead" data-i18n="hero.lead">DevOps Engineer en OCA Global. Automatizo despliegues y opero infraestructura en AWS y Azure con Ansible, Jenkins, Docker y Kubernetes. Vengo de administrar sistemas Windows, Linux y VMware, y estudio Ingeniería Informática en la UOC.</p>
       </div>
       <div class="hero-cta">
@@ -86,7 +85,7 @@
           <a class="btn" href="assets/cv.pdf" download data-i18n="cv.short">CV ↓</a>
         </div>
       </div>
-      <aside class="hero-panel" aria-label="Resumen">
+      <aside class="hero-panel" aria-label="Resumen" data-i18n-label="a.summary">
         <div class="hp-head"><i></i><i></i><i></i><span>cat whoami.yml</span></div>
         <p><span class="k">name</span>: Boris Ivan Huarachi Pérez</p>
         <p><span class="k">role</span>: DevOps Engineer @ OCA Global</p>
@@ -104,11 +103,11 @@
       <div class="about">
         <div class="id-wrap">
           <div class="lanyard" aria-hidden="true"></div>
-          <button class="id-card" id="id-card" aria-label="Girar tarjeta">
+          <button class="id-card" id="id-card" aria-label="Girar tarjeta" data-i18n-label="a.flip" aria-pressed="false">
             <span class="id-inner">
               <span class="id-face id-front">
                 <span class="id-top"><i></i><b>boris@debian:~$ id</b></span>
-                <span class="id-photo"><img id="id-img" src="assets/boris-foto.webp?v=1" alt="Foto de perfil" /></span>
+                <span class="id-photo"><img id="id-img" src="assets/boris-foto.webp?v=2" alt="Foto de Boris" width="246" height="206" loading="lazy" decoding="async" /></span>
                 <span class="id-name">Boris Ivan</span>
                 <span class="id-sub">Cloud &amp; DevOps Engineer</span>
                 <span class="id-svc"><i></i>boris.service — active (running)</span>
@@ -132,11 +131,11 @@
         <div>
           <h2 data-i18n="about.title">DevOps Engineer hoy, Cloud Architect mañana.</h2>
           <p data-i18n="about.p1">Soy DevOps Engineer en OCA Global, donde automatizo despliegues y gestiono infraestructura con Ansible, Jenkins, GitHub, Zabbix y Azure. Antes administré entornos virtualizados con VMware y servidores Linux y Windows, y trabajé con AWS, Docker y Kubernetes.</p>
-          <p data-i18n="about.p2">Trabajo en la construcción y operación de plataformas seguras, escalables y altamente disponibles. Ahora preparo AWS Solutions Architect Associate mientras estudio Ingeniería Informática en la UOC.</p>
+          <p data-i18n="about.p2">Ahora mismo preparo la AWS Solutions Architect Associate y estudio Ingeniería Informática en la UOC.</p>
           <ul class="stats">
             <li><b>5+</b><span data-i18n="st.years">años en IT</span></li>
             <li><b>3</b><span data-i18n="st.certs">certificaciones</span></li>
-            <li><b>74</b><span data-i18n="st.repos">repos públicos</span></li>
+            <li><b id="repo-count">75</b><span data-i18n="st.repos">repos públicos</span></li>
             <li><b>1</b><span data-i18n="st.degree">grado en curso</span></li>
           </ul>
         </div>
@@ -152,9 +151,9 @@
     <section id="skills" class="block">
       <p class="tag">Skills</p>
       <h2 data-i18n="sk.title">terraform state list</h2>
-      <div class="filters" id="filters" role="tablist"></div>
+      <div class="filters" id="filters" role="group" aria-label="Filtrar skills" data-i18n-label="a.filter"></div>
       <div class="periodic" id="periodic"></div>
-      <p class="desc" id="sk-desc" aria-live="polite" data-i18n="sk.hint">Pasa el cursor por un elemento para ver su descripción.</p>
+      <p class="desc" id="sk-desc" aria-live="polite" data-i18n="sk.hint">Pasa el cursor o toca un elemento para ver su descripción.</p>
       <p class="tfplan" id="tfplan" aria-live="polite"></p>
       <p class="legend"><span class="tfsym add">+</span><span data-i18n="sk.use">en uso</span> <span class="tfsym chg">~</span><span data-i18n="sk.train">en entrenamiento</span></p>
     </section>
@@ -208,13 +207,19 @@
     <section id="achievements" class="block wide">
       <div class="inner">
         <p class="tag"><span data-i18n="nav.ach">Logros</span></p>
-        <h2 data-i18n="ach.title">Certificaciones</h2>
+        <h2 data-i18n="ach.title">Certificaciones y reconocimientos</h2>
       </div>
       <div class="scroller" id="scroller">
-        <div class="ach"><span>2025</span><h4>AWS Certified Cloud Practitioner</h4></div>
-        <div class="ach"><span>2025</span><h4>AWS re/Start Graduate</h4></div>
-        <div class="ach"><span>2020</span><h4>Ethical Hacker · GMetrix</h4></div>
-        <div class="ach next"><span data-i18n="cert.next">PRÓXIMO OBJETIVO</span><h4>AWS Solutions Architect Associate</h4></div>
+        <div class="ach ach-nasa">
+          <span>NOV 2026 · NASA Space Apps</span>
+          <button class="ach-thumb" id="cert-open" type="button" aria-haspopup="dialog" aria-label="Ver certificado" data-i18n-label="cert.view"><img src="assets/nasa-cert-thumb.webp" alt="" width="240" height="184" loading="lazy" decoding="async" /></button>
+          <h3>Galactic Problem Solver</h3>
+          <a class="ach-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7528192811675070464/" target="_blank" rel="noopener" data-i18n="cert.post">ver post en LinkedIn ↗</a>
+        </div>
+        <a class="ach" href="https://www.credly.com/badges/f8e4d3f9-4c8d-47b8-8ab7-e62d70e32cbc/public_url" target="_blank" rel="noopener"><span>2025 · <em data-i18n="cert.verify">verificar en Credly ↗</em></span><img class="ach-badge" src="assets/aws-ccp.webp" alt="" width="173" height="200" loading="lazy" decoding="async" /><h3>AWS Certified Cloud Practitioner</h3></a>
+        <a class="ach" href="https://www.credly.com/badges/a2490168-e110-43ed-85c0-f87fcea667ea/public_url" target="_blank" rel="noopener"><span>2025 · <em data-i18n="cert.verify">verificar en Credly ↗</em></span><img class="ach-badge" src="assets/aws-restart.webp" alt="" width="188" height="200" loading="lazy" decoding="async" /><h3>AWS re/Start Graduate</h3></a>
+        <div class="ach"><span>2020</span><svg class="ach-emblem" viewBox="0 0 100 110" aria-hidden="true"><path d="M50 4L94 29V81L50 106L6 81V29Z"/><text x="50" y="63">&gt;_</text></svg><h3>Ethical Hacker · GMetrix</h3></div>
+        <div class="ach next"><span data-i18n="cert.next">PRÓXIMO OBJETIVO</span><svg class="ach-emblem pending" viewBox="0 0 100 110" aria-hidden="true"><path d="M50 4L94 29V81L50 106L6 81V29Z"/><text x="50" y="63">SAA</text></svg><h3>AWS Solutions Architect Associate</h3></div>
       </div>
     </section>
 
@@ -223,11 +228,11 @@
       <p class="tag"><span data-i18n="nav.proj">Proyectos</span></p>
       <h2 data-i18n="q.title">Proyectos y roadmap</h2>
       <div class="grid3">
-        <article class="card"><span class="pill dark" data-i18n="q.done">Publicado</span><h4 data-i18n="qa.title">Aeropuerto · Infra &amp; CI/CD</h4><p data-i18n="qa.desc">Infraestructura y pipelines del sistema Aeropuerto: backend Spring Boot y frontend React desplegados en AWS ECS Fargate.</p><div class="chips"><span>AWS ECS</span><span>Docker</span><span>GitHub Actions</span></div><a class="link" href="https://github.com/borizSam/Aeropuerto-infra" target="_blank" rel="noopener">GitHub</a></article>
-        <article class="card"><span class="pill" data-i18n="q.done">Publicado</span><h4 data-i18n="qb.title">CI/CD con tests automáticos</h4><p data-i18n="qb.desc">Pipeline en Python que valida cada commit con tests automáticos (shift-left testing).</p><div class="chips"><span>Python</span><span>Docker</span><span>GitHub Actions</span></div><a class="link" href="https://github.com/borizSam/ci-cd-python-test-automation" target="_blank" rel="noopener">GitHub</a></article>
-        <article class="card"><span class="pill" data-i18n="q.done">Publicado</span><h4 data-i18n="qc.title">API REST de Pokémon</h4><p data-i18n="qc.desc">API con FastAPI: CRUD, filtros y Swagger, tests en CI y lista para contenedor.</p><div class="chips"><span>FastAPI</span><span>Docker</span><span>pytest</span></div><a class="link" href="https://github.com/borizSam/pokemon-fastapi" target="_blank" rel="noopener">GitHub</a></article>
-        <article class="card"><span class="pill" data-i18n="q.hack">NASA Space Apps 2026</span><h4 data-i18n="qd.title">Astro-Care</h4><p data-i18n="qd.desc">Monitorización de salud offline para astronautas Artemis: constantes en tiempo real, NEWS2 automático y un test GO / NO-GO antes de cada tarea crítica.</p><div class="chips"><span>TypeScript</span><span>Tiempo real</span><span>NEWS2</span></div><a class="link" href="https://github.com/borizSam/astro-care" target="_blank" rel="noopener">GitHub</a></article>
-        <article class="card"><span class="pill" data-i18n="q.done">Publicado</span><h4 data-i18n="qe.title">Bedrock-IA · contenido DevOps</h4><p data-i18n="qe.desc">Pipeline diario que genera un post DevOps con IA (Amazon Bedrock) y lo publica en GitHub Pages con Quarto y GitHub Actions.</p><div class="chips"><span>AWS Lambda</span><span>Bedrock</span><span>Quarto</span></div><a class="link" href="https://github.com/borizSam/quarto-bedrock" target="_blank" rel="noopener">GitHub</a></article>
+        <article class="card"><span class="pill dark" data-i18n="q.done">Publicado</span><h3 data-i18n="qa.title">Aeropuerto · Infra &amp; CI/CD</h3><p data-i18n="qa.desc">Infraestructura y pipelines del sistema Aeropuerto: backend Spring Boot y frontend React desplegados en AWS ECS Fargate.</p><div class="chips"><span>AWS ECS</span><span>Docker</span><span>GitHub Actions</span></div><a class="link" href="https://github.com/borizSam/Aeropuerto-infra" target="_blank" rel="noopener">GitHub</a></article>
+        <article class="card"><span class="pill" data-i18n="q.done">Publicado</span><h3 data-i18n="qb.title">CI/CD con tests automáticos</h3><p data-i18n="qb.desc">Pipeline en Python que valida cada commit con tests automáticos (shift-left testing).</p><div class="chips"><span>Python</span><span>Docker</span><span>GitHub Actions</span></div><a class="link" href="https://github.com/borizSam/ci-cd-python-test-automation" target="_blank" rel="noopener">GitHub</a></article>
+        <article class="card"><span class="pill" data-i18n="q.done">Publicado</span><h3 data-i18n="qc.title">API REST de Pokémon</h3><p data-i18n="qc.desc">API con FastAPI: CRUD, filtros y Swagger, tests en CI y lista para contenedor.</p><div class="chips"><span>FastAPI</span><span>Docker</span><span>pytest</span></div><a class="link" href="https://github.com/borizSam/pokemon-fastapi" target="_blank" rel="noopener">GitHub</a></article>
+        <article class="card"><span class="pill" data-i18n="q.hack">NASA Space Apps 2026</span><h3 data-i18n="qd.title">Astro-Care</h3><p data-i18n="qd.desc">Monitorización de salud offline para astronautas Artemis, hecha en equipo en 48 horas: constantes en tiempo real, NEWS2 automático y un test GO / NO-GO antes de cada tarea crítica.</p><div class="chips"><span>TypeScript</span><span data-i18n="chip.rt">Tiempo real</span><span>NEWS2</span></div><a class="link" href="https://github.com/borizSam/astro-care" target="_blank" rel="noopener">GitHub</a></article>
+        <article class="card"><span class="pill" data-i18n="q.done">Publicado</span><h3 data-i18n="qe.title">Bedrock-IA · contenido DevOps</h3><p data-i18n="qe.desc">Pipeline diario que genera un post DevOps con IA (Amazon Bedrock) y lo publica en GitHub Pages con Quarto y GitHub Actions.</p><div class="chips"><span>AWS Lambda</span><span>Bedrock</span><span>Quarto</span></div><a class="link" href="https://github.com/borizSam/quarto-bedrock" target="_blank" rel="noopener">GitHub</a></article>
       </div>
 
       <h3 class="sub" data-i18n="q.roadmap">Roadmap</h3>
@@ -253,24 +258,64 @@
     </section>
   </main>
 
-  <!-- Hidden: the Draco constellation. Brush the stars with the cursor and a dragon (and a Sun Tzu quote) appears -->
-  <div class="sky" id="sky">
-    <blockquote class="sky-quote" id="sky-quote"><q data-i18n="sky.quote">Talk is cheap. Show me the code.</q><cite data-i18n="sky.cite">— Linus Torvalds</cite></blockquote>
-  </div>
+  <!-- Last puzzle, in plain sight: you are inside vim. Get out (:q!). -->
+  <section class="vim" id="vim" aria-labelledby="vim-ask">
+    <p class="vim-ask" id="vim-ask" data-i18n="vim.ask">Último reto: sal de vim.</p>
+    <div class="vim-win" id="vim-win">
+      <div class="hp-head vim-head" aria-hidden="true"><i></i><i></i><i></i><span id="vim-title">vim portfolio.md</span></div>
+      <div class="vim-edit" id="vim-edit">
+        <div class="vim-buf" aria-hidden="true">
+          <p class="h"><b>1</b><span data-i18n="vim.l1"># Despliegues aburridos (de los buenos)</span></p>
+          <p><b>2</b></p>
+          <p><b>3</b><span data-i18n="vim.l3">Si tu equipo aún despliega a mano y cruza los dedos,</span></p>
+          <p><b>4</b><span data-i18n="vim.l4">o buscas a alguien que automatice lo repetitivo</span></p>
+          <p><b>5</b><span data-i18n="vim.l5">y mantenga la nube en pie mientras duermes:</span></p>
+          <p class="me"><b>6</b><span data-i18n="vim.l6">ese soy yo. Escríbeme ↑</span></p>
+          <p><b>7</b></p>
+          <p class="pss"><b>8</b><span data-i18n="vim.l8">Por cierto: estás dentro de vim.</span></p>
+          <p class="vt">~</p>
+        </div>
+        <div class="vim-status" aria-hidden="true"><span>portfolio.md [RO]</span><span class="vim-mode" id="vim-mode">NORMAL</span><span>1,1 · All</span></div>
+        <form class="vim-cmd" id="vim-form"><input id="vim-in" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" placeholder=":" aria-label="Comando de vim" data-i18n-label="vim.label" /></form>
+        <p class="vim-msg" id="vim-msg" role="status" aria-live="polite"></p>
+      </div>
+      <div class="vim-ok" id="vim-ok" hidden>
+        <p class="vim-ok-t"><span class="ok">✓</span> <span id="vim-time"></span></p>
+        <p class="vim-ok-s" data-i18n="vim.ok">Hay gente que lleva años intentándolo.</p>
+      </div>
+    </div>
+    <blockquote class="sky-quote vim-quote" id="vim-quote" hidden><q data-i18n="sky.quote">Talk is cheap. Show me the code.</q><cite data-i18n="sky.cite">— Linus Torvalds</cite></blockquote>
+  </section>
 
   <footer class="footer">© 2026 Boris Ivan Huarachi Pérez</footer>
+
+  <!-- NASA Space Apps certificate, full size -->
+  <dialog class="cert-dlg" id="cert-dlg" aria-labelledby="cert-dlg-t">
+    <button class="ghost cert-close" id="cert-close" type="button" aria-label="Cerrar" data-i18n-label="egg.close">✕</button>
+    <img src="assets/nasa-cert.webp" alt="Certificado Galactic Problem Solver, NASA Space Apps Challenge 2026" width="898" height="690" loading="lazy" decoding="async" />
+    <p id="cert-dlg-t">Galactic Problem Solver · NASA Space Apps Challenge 2026 · <a href="https://www.linkedin.com/feed/update/urn:li:activity:7528192811675070464/" target="_blank" rel="noopener" data-i18n="cert.post">ver post en LinkedIn ↗</a></p>
+  </dialog>
+
+  <!-- Hidden terminal: type "sudo" on the page, press ` or Ctrl+Alt+T, or tap the logo 5 times -->
+  <dialog class="term" id="term" aria-labelledby="term-title">
+    <div class="term-bar"><i></i><i></i><i></i><span id="term-title">visitor@borizsam: ~</span><button class="term-x" id="term-x" type="button" aria-label="Cerrar" data-i18n-label="egg.close">✕</button></div>
+    <div class="term-out" id="term-out" role="log" aria-live="polite"></div>
+    <form class="term-line" id="term-form"><label for="term-in"><b>visitor@borizsam</b>:~$</label><input id="term-in" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send" /></form>
+  </dialog>
 
   <!-- Easter egg reward -->
   <div class="egg-reveal" id="egg-reveal" role="dialog" aria-modal="true" aria-labelledby="egg-quote" hidden>
     <button class="ghost egg-close" id="egg-close" data-i18n-label="egg.close" aria-label="Cerrar">✕</button>
     <svg class="egg-ribbon" viewBox="0 -10 100 150" aria-label="Lazo negro de luto" role="img"><defs><linearGradient id="rb" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="80" y2="140"><stop offset="0" stop-color="#6a6a6a"/><stop offset=".45" stop-color="#262626"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient><clipPath id="rbc"><polygon points="0,-10 100,-10 100,140 76,140 68,130 60,140 40,140 32,130 24,140 0,140"/></clipPath></defs><g clip-path="url(#rbc)" fill="none" stroke-linejoin="round"><path id="rbp" d="M32 136C38 104 44 84 50 64C56 44 72 28 66 12C60-2 38-2 34 12C28 28 44 44 50 64C56 84 62 104 68 136" stroke="url(#rb)" stroke-width="15"/><path d="M50 64C56 84 62 104 68 136" stroke="url(#rb)" stroke-width="15"/></g></svg>
     <div class="egg-card">
+      <pre class="egg-term" aria-hidden="true"><span style="--i:0"><b>boris@prod</b>:~$ git merge feature/imagine</span><span style="--i:1">Merge made by the 'ort' strategy.</span><span style="--i:2"> ats.md | 1 <em>+</em></span><span style="--i:3"><b>boris@prod</b>:~$ cat ats.md</span></pre>
       <p class="egg-quote" id="egg-quote" data-i18n="egg.quote">Si puedes imaginarlo, puedes programarlo.</p>
       <a class="btn solid egg-link" href="https://www.youtube.com/channel/UC7QoKU6bj1QbXQuNIjan82Q" target="_blank" rel="noopener">▶ Programación ATS</a>
       <p class="egg-sig" aria-hidden="true">$ echo "gracias por enseñarnos a imaginar" <i class="caret"></i></p>
     </div>
   </div>
-  <script src="intro.js?v=46"></script>
-  <script src="script.js?v=40"></script>
+  <script src="intro.js?v=53" defer></script>
+  <script src="script.js?v=50" defer></script>
+  <script src="scenes.js?v=8" defer></script>
 </body>
 </html>
